@@ -74,7 +74,7 @@
           </a>
         </li>
         <li>
-          <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{'https://ivr.solutions'+url | urlencode}}&amp;title={{data.title | urlencode}}&amp;source={{'https://ivr.solutions' | urlencode}}"
+          <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{'https://people.restvo.com'+url | urlencode}}&amp;title={{data.title | urlencode}}&amp;source={{'https://people.restvo.com' | urlencode}}"
              onclick="window.open(this.href, 'Share via LinkedIn', 'width=500, height=600'); return false;">
             <ion-icon name="logo-linkedin"></ion-icon>
           </a>
@@ -199,7 +199,7 @@ if(navigator.share) {
     navigator.share({
       title: '{{ data.title }}',
       text: 'Check out this article by People in Need: {{ data.title }}',
-      url: '{{ "https://ivr.solutions"+url }}',
+      url: '{{ "https://people.restvo.com"+url }}',
     });
   });
 }

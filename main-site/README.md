@@ -16,4 +16,4 @@ Repo for the ivr.solutions site.
 
 ## Deploy
 
-Changes to master are automatically deployed to  [stage.ivr.solutions/](https://stage.ivr.solutions/). Periodically, the IVR team will inspect staging and promote it to [ivr.solutions](https://ivr.solutions).
+Changes to master are automatically deployed to  [stage.ivr.solutions/](https://stage.ivr.solutions/). Periodically, the IVR team will inspect staging and promote it to [ivr.solutions](https://people.restvo.com).

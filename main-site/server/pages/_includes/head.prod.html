@@ -32,10 +32,10 @@
 
 {% if 'products' in id %}
   {% if not meta_image %}
-    {% set meta_image = 'https://ivrbot.s3.us-west-000.backblazeb2.com/app/icon.png' %}
+    {% set meta_image = 'https://people.restvo.com/img/logo.png' %}
   {% endif %}
   {% if not meta_description %}
-    {% set meta_description = "People in Need provides virtual phone assistant service to help businesses capture 100% of their opportunities in their incoming calls." %}
+    {% set meta_description = "People in Need provides physical and spiritual support to Christians in the Middle East" %}
   {% endif %}
   {% set meta_keywords = "ivr,virtual,phone,assistant,answering,tree,automated,service,voice,response,system,call,routing,voice" %}
 {% endif %}
@@ -49,7 +49,7 @@
 {% if meta_canonical %}
   <link rel="canonical" href="{{meta_canonical}}">
 {% else %}
-  <link rel="canonical" href="https://ivr.solutions{{requrl}}">
+  <link rel="canonical" href="https://people.restvo.com{{requrl}}">
 {% endif %}
 
 <!-- Social: Twitter -->
@@ -65,12 +65,12 @@
 {% else %}
   <meta name="twitter:title" content="People in Need">
 {% endif %}
-<meta name="twitter:description" content="{% if meta_description %}{{ meta_description }}{% else %}People in Need provides virtual phone assistant service to help businesses capture 100% of their opportunities in their incoming calls.{% endif %}">
-<meta name="twitter:image" content="{% if meta_image %}{{meta_image}}{% else %}https://ivrbot.s3.us-west-000.backblazeb2.com/app/icon.png{% endif %}">
+<meta name="twitter:description" content="{% if meta_description %}{{ meta_description }}{% else %}People in Need provides physical and spiritual support to Christians in the Middle East{% endif %}">
+<meta name="twitter:image" content="{% if meta_image %}{{meta_image}}{% else %}https://people.restvo.com/img/logo.png{% endif %}">
 
 <!-- Social: Facebook / Open Graph -->
 <meta property="fb:page_id" content="1321836767955949">
-<meta property="og:url" content="https://ivr.solutions{{url}}">
+<meta property="og:url" content="https://people.restvo.com{{url}}">
 <meta property="og:type" content="article">
 {% if title %}
   <meta property="og:title" content="{{title}}">

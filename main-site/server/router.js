@@ -190,14 +190,14 @@ module.exports = {
       (_, res) => markdown(res, 'pr-capacitor-adds-support-for-swift-5-and-android-10-securty-performance'))
 
     // web app
-    .get('/org/*', (req, res) => res.redirect(`https://ivr.solutions/app${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
-    .get('/recover/*', (req, res) => res.redirect(`https://ivr.solutions/app${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
-    .get('/edit/*', (req, res) => res.redirect(`https://ivr.solutions/app${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
-    .get('/settings/*', (req, res) => res.redirect(`https://ivr.solutions/app${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
-    .get('/assistant/*', (req, res) => res.redirect(`https://ivr.solutions/app${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
-    .get('/billing/*', (req, res) => res.redirect(`https://ivr.solutions/app${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
-    .get('/plan/*', (req, res) => res.redirect(`https://ivr.solutions/app${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
-    .get('/admins/*', (req, res) => res.redirect(`https://ivr.solutions/app${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
+    .get('/org/*', (req, res) => res.redirect(`https://app.restvo.com${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
+    .get('/recover/*', (req, res) => res.redirect(`https://app.restvo.com${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
+    .get('/edit/*', (req, res) => res.redirect(`https://app.restvo.com${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
+    .get('/settings/*', (req, res) => res.redirect(`https://app.restvo.com${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
+    .get('/assistant/*', (req, res) => res.redirect(`https://app.restvo.com${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
+    .get('/billing/*', (req, res) => res.redirect(`https://app.restvo.com${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
+    .get('/plan/*', (req, res) => res.redirect(`https://app.restvo.com${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
+    .get('/admins/*', (req, res) => res.redirect(`https://app.restvo.com${req.path}`)) // for dev server, the redirect domain can be dev.ivr.solutions
 
     // JSON endpoints
     .post('/contact', bp.json(), es(), contactCtrl)
