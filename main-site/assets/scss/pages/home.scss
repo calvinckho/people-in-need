@@ -465,7 +465,7 @@
 
     .graphics {
       width: 560px;
-      height: 708px;
+      height: 372px;
       margin-left: -55px;
       margin-top: -169px;
 
@@ -485,9 +485,20 @@
   #native {
     padding-bottom: 400px;
 
+    &.left {
+      .graphics {
+        margin-right: -68px;
+      }
+    }
+
+    &.right {
+      .graphics {
+        margin-left: -68px;
+      }
+    }
     .graphics {
       margin-top: -16px;
-      margin-right: -68px;
+
       position: relative;
 
       > img {
