@@ -55,7 +55,7 @@ module.exports = {
     .get('/code-of-conduct', (_, res) => markdown(res, 'code-of-conduct'))
     .get('/community', (_, res) => res.render('community'))
     .get('/contact', (_, res) => res.render('contact'))
-    .get('/contributors', (_, res) => res.render('contributors'))
+    .get('/contributors', (_, res) => res.render('give'))
     .get('/covid-19', (_, res) => markdown(res, 'corona'))
     .get('/creator', (_, res) => res.render('creator/index'))
     .get('/creator/support', (_, res) => res.render('creator/support'))
@@ -82,6 +82,7 @@ module.exports = {
     .get('/enterprise-license-agreement', (_, res) => markdown(res, 'enterprise-license-agreement'))
     .get('/framework', (_, res) => res.render('framework'))
     .get('/getting-started', (_, res) => res.render('getting-started'))
+    .get('/give', (_, res) => res.render('give'))
 
     .get('/go/pwa-architects-guide', (_, res) =>
       res.render('go/pwa-architects-guide/index'))

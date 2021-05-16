@@ -104,6 +104,41 @@
     font-size: 16px;
     font-weight: 600;
     letter-spacing: -0.01em;
+
+    .cta-button {
+      font-size: 16px;
+      line-height: 34px;
+      margin-top: 4px;
+      padding-top: 0;
+      color: #4D8DFF;
+      display: inline-block;
+      position: relative;
+      background: none;
+      letter-spacing: -0.03em;
+      font-weight: 600;
+      font-family: $font-family-eina;
+      position: relative;
+      transition: .3s opacity;
+
+      &:hover {
+        opacity: .6;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+      }
+
+      &::after {
+        font-family: 'Ionicons';
+        content: '';
+        font-size: 23px;
+        font-weight: 400;
+        vertical-align: -3px;
+        margin-left: 5px;
+      }
+    }
   }
 
   .feature__icon {

@@ -10,11 +10,11 @@
 <main>
   <section class="cta">
     <div class="container">
-      <h1><span class="fallback">Become a contributor</span><span class="typed"></span> for People in Need</h1>
-      <p>Our community is full of thought leaders and developers doing amazing things on People in Need. Join us by sharing your story.</p>
-      <div class="cta__buttons">
+      <h1><span class="fallback">Give</span><span class="typed"></span><br>Christians</h1>
+      <p>Many ways to support our work.</p>
+      <!--<div class="cta__buttons">
         <a href="#" id="apply-cta" class="btn">Apply now</a>
-      </div>
+      </div>-->
     </div>
   </section>
 
@@ -23,28 +23,21 @@
       <ul class="feature-list">
         <li>
           <div class="feature">
-            <div class="feature__icon talk"></div>
+            <!--<div class="feature__icon talk"></div>-->
             <div class="feature__text">
-              <strong>Host a live talk</strong>
-              <p>Join us as a guest speaker on for one of our upcoming live talks. Help share your experience and voice with the community on one of our hot topics.</p>
+              <strong>Every Dollar Counts</strong>
+              <p>100% of money donated through Github Sponsors are received by us (Github covers the processing fee). This means more of your gifts go towards meeting needs on the ground.</p>
+              <a href="https://github.com/sponsors/Serve-Middle-East-Christians" target="_blank" class="cta-button">Give</a>
             </div>
           </div>
         </li>
         <li>
           <div class="feature">
-            <div class="feature__icon story"></div>
+<!--            <div class="feature__icon blog"></div>-->
             <div class="feature__text">
-              <strong>Tell your customer story</strong>
-              <p>Interested in joining us for a two minute Q&A interview style video? Tell your story and how People in Need has set your organization up for success in mobile.</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="feature">
-            <div class="feature__icon blog"></div>
-            <div class="feature__text">
-              <strong>Be a guest blogger</strong>
-              <p>Some of our best content comes from our community members. We want to enable you to contribute to our blog, and weigh in on some of the hottest People in Need topics and trends.</p>
+              <strong>Fiscal Transparency</strong>
+              <p>We maintain a high degree of transparency by allowing the public to view our income and expenses on Open Collective.</p>
+              <a href="https://opencollective.com/serve-middle-east/projects/food-for-christians" target="_blank" class="cta-button">See Reports</a>
             </div>
           </div>
         </li>
@@ -55,14 +48,14 @@
   <section class="topics">
     <div class="container">
       <hgroup>
-        <h1>Trending topics</h1>
-        <p>These are some of the most talked about topics in the industry. Select one of these topics and we can work together to share your views.</p>
+        <h1>Thank You for Your Partnership</h1>
+        <p>Your faithfulness and generosity is what propels us to keeping going</p>
       </hgroup>
     </div>
     <svg class="topics__animation"></svg>
   </section>
 
-  <section class="quotes">
+  <!--<section class="quotes">
     <div class="quotes__quote morony">
       <div class="quotes__content">
         <a href="https://www.joshmorony.com/">
@@ -85,15 +78,15 @@
         </a>
       </div>
     </div>
-  </section>
+  </section>-->
 
-  <section class="apply">
+  <!--<section class="apply">
     <div class="container">
       <div class="apply__form hubspot-override">
         <h2>Apply to contribute</h2>
-        <!--[if lte IE 8]>
+        &lt;!&ndash;[if lte IE 8]>
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-        <![endif]-->
+        <![endif]&ndash;&gt;
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
         <script>
           hbspt.forms.create({
@@ -121,7 +114,7 @@
         </ul>
       </div>
     </div>
-  </section>
+  </section>-->
 
 {% endblock %}
 
@@ -134,7 +127,7 @@
     var isTyping = true;
     document.querySelector('.fallback').style.display = "none";
     var typed = new Typed('.typed', {
-      strings: ["Become a contributor", "Host a talk", "Tell your story", "Be a blogger"],
+      strings: ["Give to", "Sponsor", "Pray for", "Remember"],
       typeSpeed: 50,
       backSpeed: 20,
       loop: true,
@@ -239,15 +232,15 @@
 
     var nodeId = 0;
     var topics = [
-      { name: 'Web Components', radius: 120 },
-      { name: 'Why People in Need?', radius: 80 },
-      { name: 'PWAs', radius: 60 },
-      { name: 'Service Workers', radius: 100 },
-      { name: 'Performance Techniques', radius: 140 },
-      { name: 'Electron', radius: 80 },
-      { name: 'Native Integration', radius: 120 },
-      { name: 'New Web APIs', radius: 140 },
-      { name: 'Desktop', radius: 80 }
+      { name: 'One-time Donation', radius: 120 },
+      { name: 'Equity Donation', radius: 80 },
+      { name: 'Advocacy', radius: 60 },
+      { name: 'Volunteer', radius: 100 },
+      { name: 'Sponsorship', radius: 140 },
+      { name: 'Visitation', radius: 80 },
+      { name: 'Prayer', radius: 120 },
+/*      { name: 'New Web APIs', radius: 140 },
+      { name: 'Desktop', radius: 80 }*/
     ];
 
     var yScale = d3.scaleLinear().domain([0, topics.length]).range([-200, height + 200]);
