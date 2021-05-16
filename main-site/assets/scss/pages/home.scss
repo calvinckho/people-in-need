@@ -520,8 +520,9 @@
       overflow: hidden;
 
       .graphics {
+        margin-left: 0 !important;
         margin-top: 64px;
-        margin-right: auto;
+        margin-right: 0 !important; // auto
         max-width: 100%;
       }
     }
