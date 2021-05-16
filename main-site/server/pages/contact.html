@@ -1,0 +1,105 @@
+{% extends "_layouts/base.html" %}
+{% set id = 'contact' %}
+{% set title = 'Contact People in Need' %}
+{% set meta_description = "Contact us to learn more about the needs in the Middle East" %}
+{% set cssPath = 'contact' %}
+
+{% block main %}
+<div class="cta banner">
+  <hgroup class="container">
+    <h1>Get in touch</h1>
+    <p>
+      We’d love to hear from you
+    </p>
+  </hgroup>
+  <div class="bar tabbed" data-spy="affix" data-offset-top="375">
+    <div class="container" id="discover-nav" offset="-400">
+      <ul class="categories nav">
+        <li><a class="about" href="/about">About Us</a></li>
+        <!--<li><a class="values" href="/values">Values</a></li>-->
+        <li><a class="active team" href="/team">Our Team</a></li>
+        <li><a class="jobs" href="/jobs">Opportunities</a></li>
+        <li><a class="contact" href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hgroup class="container hero text-center">
+  <h3>Contact People in Need</h3>
+  <p>Please choose a topic below related to your inquiry.</p>
+</hgroup>
+
+<div class="container topics">
+  <a href="mailto:ch235@cornell.edu" class="support">
+    <h3>Questions</h3>
+    <div class="detail">
+      <p>
+        Share with us your interests and past experiences working in the Middle East.
+      </p>
+    </div>
+  </a>
+  <a href="mailto:ch235@cornell.edu" class="sales">
+    <h3>Giving</h3>
+    <div class="detail">
+      <p>
+        Contact us to discuss about different ways to give to the cause.
+      </p>
+    </div>
+  </a>
+  <!--<a href="/press" class="press">
+    <h3>Press</h3>
+    <div class="detail">
+      <p>
+        Get in touch with our marketing team and get information on our press
+        and branding/logo guidelines.
+      </p>
+    </div>
+  </a>-->
+  <a href="mailto:ch235@cornell.edu" class="partnerships">
+    <h3>Partnerships</h3>
+    <div class="detail">
+      <p>
+        Interested in partnering with us or joining forces somehow? Get in touch
+        with our coordinators.
+      </p>
+    </div>
+  </a>
+</div>
+<!--<div class="container other">
+  <hgroup class="social">
+    <h4>Get Social with us</h4>
+    <p class="sm">
+      <a class="twitter"
+         href="https://twitter.com/restvoinc"
+         target="_blank">
+        <i class="icon ion-logo-twitter"></i>
+        Twitter
+      </a>
+      <a class="facebook"
+         href="https://www.facebook.com/RestvoInc"
+         target="_blank">
+         <i class="icon ion-logo-facebook"></i>
+        Facebook
+      </a>
+      <a class="github"
+         href="https://github.com/calvinckho/restvo-app"
+         target="_blank">
+         <i class="icon ion-logo-github"></i>
+        GitHub
+      </a>
+    </p>
+  </hgroup>
+  <hgroup class="chat">
+    <h4>Chat with People in Need devs</h4>
+    <p class="sm">
+      Our developers hang out on the Github
+      <a target="_blank" href="https://github.com/calvinckho/restvo-app">Forum</a>.&lt;!&ndash;, IRC
+      (<strong>#ionic</strong> on <strong>freenode</strong>) and the
+      <a target="_blank" href="http://ionicworldwide.herokuapp.com/">
+        People in Need Worldwide Slack
+      </a> channel.&ndash;&gt;
+    </p>
+  </hgroup>-->
+</div>
+{% endblock %}

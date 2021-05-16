@@ -1,0 +1,244 @@
+
+<!--<li class="{% if id.indexOf('what-is-ionic') == 0%} active{% endif %}">
+  <a href="/how-it-works" id="btn-header-ionic">How It Works</a>
+</li>-->
+<li class="{% if id.indexOf('about') == 0%} active{% endif %}">
+  <a href="/about" id="btn-header-about">Our Story</a>
+</li>
+<!--<li class="dropdown dropdown&#45;&#45;has-container">
+  <a href="#"
+     class="dropdown-toggle"
+     role="button"
+     aria-haspopup="true"
+     aria-expanded="false">
+     Features {% include '_includes/svg/chevron-down.svg' %}
+  </a>
+  <div class="dropdown-menu dropdown-menu&#45;&#45;bar">
+    <ul class="dropdown-menu&#45;&#45;container container" id="dropdown-platform">
+      <li class="dropdown-menu__row">
+        <ul class="dropdown-menu__column dropdown-menu__sprite-child">
+          <li><span class="dropdown-menu__text&#45;&#45;l2">Churches</span></li>
+          <li>
+            <a href="/churches" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;lg restvo-icon-journey">
+              Journey
+              <small>Individual Growth Plan</small>
+            </a>
+          </li>
+          <li>
+            <a href="/churches#mentoring" class="dropdown-menu__text&#45;&#45;l3  icon&#45;&#45;lg restvo-icon-mentoring">
+              Mentoring
+              <small>Learn from a Mentor</small>
+            </a>
+          </li>
+          <li>
+            <a href="/churches#groups" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;lg restvo-icon-group dropdown-menu__external">
+              Group
+              <small>Grow with a Group</small>
+            </a>
+          </li>
+          <li>
+            <a href="/churches#program" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;lg restvo-icon-program dropdown-menu__external">
+              Program
+              <small>Manages Journeys, Mentors, and Groups</small>
+            </a>
+          </li>
+        </ul>
+        <ul class="dropdown-menu__column dropdown-menu__sprite-child">
+          <li><span class="dropdown-menu__text&#45;&#45;l2">Denominations</span></li>
+          <li>
+            <a href="/denominations" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;lg restvo-icon-learning">
+              Learning
+              <small>Organize learning</small>
+            </a>
+          </li>
+          <li>
+            <a href="/denominations#coaching" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;lg restvo-icon-coaching">
+              Coaching
+              <small>Manage coaching relationships</small>
+            </a>
+          </li>
+          <li>
+            <a href="/denominations#health-score" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;lg restvo-icon-health-score">
+              Health Score
+              <small>Gain Insights of leaders' health</small>
+            </a>
+          </li>
+        </ul>
+        <ul class="dropdown-menu__column dropdown-menu__sprite-child">
+          <li><span class="dropdown-menu__text&#45;&#45;l2">Non-profits</span></li>
+          <li>
+            <a href="/nonprofits" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;lg restvo-icon-onboarding">
+              Onboarding
+              <small>Recruit and Inform</small>
+            </a>
+          </li>
+          <li>
+            <a href="/nonprofits#education" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;lg restvo-icon-education">
+              Education
+              <small>Train and Empower</small>
+            </a>
+          </li>
+        </ul>
+        <ul class="dropdown-menu__column dropdown-menu__column&#45;&#45;highlight">
+          <li><span class="dropdown-menu__text&#45;&#45;l2">Services</span></li>
+          <li>
+            <a href="/enterprise/support" class="dropdown-menu__text&#45;&#45;l3">
+              Consultation
+              <small>We help organizations create a learning process from scratch</small>
+            </a>
+          </li>
+        </ul>
+      </li>{# end .dropdown-menu__row #}
+    </ul>{# end .dropdown-menu__container #}
+  </div>
+</li>-->
+<li class="dropdown dropdown--has-container">
+  <a href="#"
+     class="dropdown-toggle"
+     role="button"
+     aria-haspopup="true"
+     aria-expanded="false">
+    Learning {% include '_includes/svg/chevron-down.svg' %}
+  </a>
+  <ul class="dropdown-menu dropdown-menu--container" id="dropdown-support">
+    <li class=" dropdown-menu__row">
+      <ul class="dropdown-menu__column">
+        <li><span class="dropdown-menu__text--l2">Topics</span></li>
+        <li>
+          <a href="/resources" class="dropdown-menu__text--l3"><!--add icon--docs to the class if wanted to enable icon-->
+            Resources
+          </a>
+        </li>
+        <!--<li>
+          <a href="/support" class="dropdown-menu__text&#45;&#45;l3">&lt;!&ndash;add icon&#45;&#45;help-center to the class if wanted to enable icon&ndash;&gt;
+            Help Center
+          </a>
+        </li>-->
+      </ul>
+    </li>
+  </ul>{# end .dropdown-menu__container #}
+</li>
+<!--<li class="dropdown dropdown&#45;&#45;has-container">
+  <a href="#"
+     class="dropdown-toggle"
+     role="button"
+     aria-haspopup="true"
+     aria-expanded="false">
+    Resources {% include '_includes/svg/chevron-down.svg' %}
+  </a>
+  <ul class="dropdown-menu dropdown-menu&#45;&#45;container" id="dropdown-developers">
+    <li>
+      <a href="/resources/documentation" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;docs">
+        Documentations
+        {% include '_includes/svg/ico-forward.svg' %}
+      </a>
+    </li>
+    <li class=" dropdown-menu__row">
+      <ul class="dropdown-menu__column">
+        <li><span class="dropdown-menu__text&#45;&#45;l2">Topics</span></li>
+        <li>
+          <a href="/denominations" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;ui-components">
+            Coaching Management
+          </a>
+        </li>
+        <li>
+          <a href="/churches" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;native-apis" id="btn-header-developers-native-plugins">
+            Small Group Learning
+          </a>
+        </li>
+        <li>
+          &lt;!&ndash;<li>
+            <a href="https://ionicframework.com/docs/components" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;ui-components" id="btn-header-developers-ui-components">
+              UI Components
+            </a>
+          </li>
+          <li>
+            <a href="https://ionicframework.com/docs/native/community" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;native-apis" id="btn-header-developers-native-plugins">
+              Native APIs
+            </a>
+          </li>
+          <li>
+            <a href="https://ionicframework.com/react" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;react" id="btn-header-developers-react">
+              React
+            </a>
+          </li>
+          <li>
+            <a href="https://ionicframework.com/docs/angular/overview" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;angular" id="btn-header-developers-angular">
+              Angular
+            </a>
+          </li>
+          <li>
+            <a href="https://ionicframework.com/docs/cli" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;cli" id="btn-header-developers-setup-installation">
+              CLI
+            </a>
+          </li>&ndash;&gt;
+      </ul>
+
+      <ul class="dropdown-menu__column">
+        <li><span class="dropdown-menu__text&#45;&#45;l2">Community</span></li>
+        &lt;!&ndash;&lt;!&ndash;<li>
+          <a href="/community" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;hub">
+            Hub
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UChYheBnVeCfhCmqZfCUdJQw" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;youtube">
+            YouTube
+          </a>
+        </li>&ndash;&gt;
+        <li>
+          <a href="https://github.com/calvinckho/restvo-app" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;github">
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/restvoinc" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;twitter">
+            Twitter
+          </a>
+        </li>
+        &lt;!&ndash;<li>
+          <a href="https://forum.ionicframework.com/" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;forum">
+            Forum
+          </a>
+        </li>&ndash;&gt;
+      </ul>
+
+      <ul class="dropdown-menu__column">
+        <li><span class="dropdown-menu__text&#45;&#45;l2">Why People in Need?</span></li>
+        <li>
+          <a href="/resources/articles/story-of-restvo" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;resources">
+            The Story of People in Need
+          </a>
+        </li>
+        <li>
+          <a href="/resources/articles/7-ways-become-better-mentor" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;resources">
+            Become a Better Mentor
+          </a>
+        </li>
+        &lt;!&ndash;<li>
+          <a href="/resources/articles/ionic-vs-flutter-comparison-guide" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;resources">
+            People in Need vs Flutter
+          </a>
+        </li>
+        <li>
+          <a href="http://go.ionicframework.com/hybrid-vs-native-guide" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;resources">
+            Hybrid vs Native
+          </a>
+        </li>
+        <li>
+          <a href="/resources/articles/what-is-hybrid-app-development" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;resources">
+            What are Hybrid Apps
+          </a>
+        </li>
+        <li>
+          <a href="/resources/articles/how-hybrid-app-development-helps-deliver-great-ux" class="dropdown-menu__text&#45;&#45;l3 icon&#45;&#45;resources">
+            Delivering Great UX
+          </a>
+        </li>&ndash;&gt;
+      </ul>
+    </li>{# end .dropdown-menu__row #}
+  </ul>{# end .dropdown-menu__container #}
+</li>-->
+
+<!--<li><a href="/blog" id="btn-header-ecosystem-blog">Blog</a></li>-->
+<!--<li><a href="/resources" id="btn-header-resources">Resources</a></li>-->

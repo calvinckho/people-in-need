@@ -1,0 +1,154 @@
+{% extends '_layouts/base.html' %}
+{% set title = "IVR Support" %}
+{% set meta_description = "Get support building the phone assistant." %}
+{% set id = "support" %}
+{% set cssPath = 'support' %}
+{% set stickyNav = true %}
+{% set pre_footer = false %}
+
+{% block main %}
+<div class="cta gradient">
+  <hgroup class="container center">
+    <h1>How can we help?</h1>
+    <p>From technical question to premium Plus Plan support, we’re here to help.</p>
+  </hgroup>
+</div>
+
+<main>
+  <div id="customer-support" class="anchor-dest"></div>
+  <section class="container">
+    <div class="container__header">
+      <hgroup>
+        <h2>Customer support</h2>
+        <p>Run into a problem? Need help with an issue? Get in touch, we’re here to help.</p>
+      </hgroup>
+      <a href="mailto:ch235@cornell.edu" class="btn">Submit a question</a>
+    </div>
+
+    <ul class="card-list">
+      <li class="card-list__card">
+        <a target="_blank"
+           href="mailto:alex@ivr.solutions"
+           id="btn-support-account">
+          <img src="/img/support/support-account-billing.png" alt="Community Forum">
+          <h3>Account and billing</h3>
+          <p>Contact our support team for any issues or problems with your People in Need account or questions about billing.</p>
+          <span class="link-text">
+            Contact support
+            <ion-icon name="ios-arrow-forward"></ion-icon>
+          </span>
+        </a>
+      </li>
+      <li class="card-list__card">
+        <a target="_blank"
+           href="mailto:ch235@cornell.edu"
+           id="btn-support-bug">
+          <img src="/img/support/support-report-bugs.png" alt="World-wide Slack">
+          <h3>Report bug or issue</h3>
+          <p>Find a bug in the web portal? Have a new feature request? Let us know!</p>
+          <span class="link-text">
+            Report Bug
+            <ion-icon name="ios-arrow-forward"></ion-icon>
+          </span>
+        </a>
+      </li>
+      <li class="card-list__card">
+        <img src="/img/support/support-help.png" alt="StackOverflow">
+        <h3>Help using the Web Portal</h3>
+        <p>Have questions about configurations in the Web Portal? Find your answers in our documentations, or submit your question
+          <a href="mailto:ch235@cornell.edu"><span class="link-text">here</span></a>.
+        </p>
+        <a target="_blank"
+           href="/resources/documentation"
+           id="btn-support-troubleshooting">
+          <span class="link-text">
+            Read Documentations
+            <ion-icon name="ios-arrow-forward"></ion-icon>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <div id="community-help" class="anchor-dest"></div>
+  <section class="container">
+    <!--<div class="container__header">
+      <hgroup>
+        <h2>Community help</h2>
+        <p>The People in Need community is your first stop for questions and advice about the platform. Welcome to the community!</p>
+      </hgroup>
+      &lt;!&ndash;<div class="newsletter-signup">
+        <h4>Get tips in our monthly Newsletter:</h4>
+        <ionic-newsletter-signup arrow-mode="true"></ionic-newsletter-signup>
+      </div>&ndash;&gt;
+    </div>
+
+    <ul class="card-list">
+      <li class="card-list__card">
+        <a target="_blank"
+           href="https://github.com/calvinckho/restvo-app/labels/bug"
+           id="btn-support-forum">
+          <img src="/img/support/support-community-forum.png" alt="Community Forum">
+          <h3>Developer Forum</h3>
+          <p>The Forum is the best place to connect with other People in Need developers, ask questions, or even help out others.</p>
+          <span class="link-text">
+            Ask the forum
+            <ion-icon name="ios-arrow-forward"></ion-icon>
+          </span>
+        </a>
+      </li>
+    </ul>-->
+
+    <!--<ul class="link-list">
+      <li>
+        <a href="/resources/documentation">
+          <svg width="56" height="56" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.1852 0.0125012C20.4714 0.0125012 26.6532 3.50039 26.6532 10.2637V47.7554C26.6532 48.0304 26.2357 48.0929 26.1414 47.8429V47.8304C24.7542 43.5549 20.9966 39.3794 15.0573 39.0169C10.4512 38.7419 6.04716 40.6296 2.51854 43.6549C2.30305 43.8424 1.93942 44.0174 1.62965 44.0174H1.02359C0.525275 44.0174 2.29635e-05 43.6799 2.29635e-05 43.2549V7.02579C-0.013445 3.01284 5.89901 0.0125012 13.1852 0.0125012ZM42.8148 0C35.5286 0 29.3468 3.48789 29.3468 10.2512V47.7429C29.3468 48.0179 29.7643 48.0804 29.8586 47.8304V47.8179C31.2458 43.5424 35.165 39.3294 40.9428 39.0044C45.3737 38.7544 49.5488 40.3795 53.4815 43.6424C53.697 43.8174 54.0606 44.0049 54.3703 44.0049H54.9764C55.4747 44.0049 56 43.6674 56 43.2424V7.00079C56.0134 3.00034 50.101 0 42.8148 0Z" /></svg>
+          <span>Documentation</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://twitter.com/restvoinc" target="_blank">
+          <svg width="56" height="56" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M56 5.6875C53.9352 6.65 51.7279 7.3 49.402 7.6C51.7754 6.1 53.6029 3.725 54.4573 0.9C52.2382 2.2875 49.7817 3.3 47.1591 3.8375C45.0587 1.475 42.0682 0 38.7692 0C32.4204 0 27.2821 5.425 27.2821 12.1125C27.2821 13.0625 27.377 13.9875 27.5787 14.875C18.0259 14.375 9.55287 9.55 3.89235 2.2125C2.9074 4 2.33778 6.0875 2.33778 8.3C2.33778 12.5 4.37889 16.2125 7.46429 18.3875C5.56559 18.3375 3.78555 17.7875 2.24285 16.875V17.025C2.24285 22.9 6.2064 27.7875 11.4634 28.9C10.5022 29.175 9.48167 29.325 8.43738 29.325C7.70163 29.325 6.97775 29.25 6.2776 29.1C7.73723 33.9125 11.9856 37.4125 17.0172 37.5125C13.0892 40.7625 8.12884 42.7 2.74126 42.7C1.81564 42.7 0.901886 42.6375 0 42.525C5.06718 46 11.1074 48 17.5868 48C38.7455 48 50.3039 29.5375 50.3039 13.525C50.3039 13 50.292 12.475 50.2683 11.9625C52.5111 10.25 54.4573 8.125 56 5.6875Z" /></svg>
+          <span>Twitter</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.facebook.com/RestvoInc/" target="_blank">
+          <svg width="58" height="56" viewBox="0 0 58 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50.8812 17.1C54.2937 17.1 57.0687 19.9125 57.0687 23.375C57.0687 25.8125 55.6937 27.925 53.6812 28.9625C53.7687 29.575 53.8187 30.1875 53.8187 30.8125C53.8187 40.3 42.7062 48 29.0062 48C15.3062 48 4.19365 40.3 4.16865 30.825C4.16865 30.2 4.21865 29.5875 4.31865 28.975C2.30615 27.9375 0.931152 25.825 0.931152 23.375C0.931152 19.9125 3.70615 17.1 7.11865 17.1C8.74365 17.1 10.2187 17.725 11.3187 18.7625C15.4687 15.85 21.1187 13.95 27.4062 13.675L28.2937 13.65L31.9687 1.375L42.6187 3.5C43.4562 1.45 45.4437 0 47.7687 0C50.8437 0 53.3312 2.5375 53.3312 5.65C53.3312 8.7625 50.8437 11.2875 47.7687 11.2875C44.7187 11.2875 42.2312 8.7875 42.2062 5.7L33.5062 3.9625L30.5937 13.675C36.8812 13.95 42.5312 15.8375 46.6812 18.7625C47.7937 17.725 49.2562 17.1 50.8812 17.1Z" /><path d="M37.0675 36.7358C37.0425 36.7596 34.0425 39.6099 29.005 39.6337C23.8925 39.6099 20.955 36.7596 20.93 36.7358L19.355 38.2085C19.505 38.351 23.055 41.7121 29.005 41.7358C34.955 41.7121 38.4925 38.351 38.6425 38.2085L37.0675 36.7358Z" fill="white"/><path d="M37.2929 32.0267C39.4882 32.0267 41.2679 30.247 41.2679 28.0517C41.2679 25.8563 39.4882 24.0767 37.2929 24.0767C35.0975 24.0767 33.3179 25.8563 33.3179 28.0517C33.3179 30.247 35.0975 32.0267 37.2929 32.0267Z" fill="white"/><path d="M20.7929 32.0267C22.9882 32.0267 24.7679 30.247 24.7679 28.0517C24.7679 25.8563 22.9882 24.0767 20.7929 24.0767C18.5975 24.0767 16.8179 25.8563 16.8179 28.0517C16.8179 30.247 18.5975 32.0267 20.7929 32.0267Z" fill="white"/></svg>
+          <span>Facebook</span>
+        </a>
+      </li>
+    </ul>-->
+  </section>
+
+  <div id="supercharge" class="anchor-dest"></div>
+  <section class="banner">
+    <div class="container">
+      <hgroup>
+        <h1>Explore the cutting-edge phone technology with IVR Consultation.</h1>
+        <p>Let us listen to your needs and come up with strategies to enhance your caller experience.</p>
+        <a href="/enterprise/support"
+           id="btn-support-trusted-partner">
+           Learn more
+           <ion-icon name="ios-arrow-forward"></ion-icon>
+         </a>
+      </hgroup>
+    </div>
+  </section>
+
+  <!--<section class="newsletter-signup">
+    <div class="container">
+      <div class="flex">
+        <hgroup>
+          <h1>Join our newsletter</h1>
+          <p>Get our monthly email on the latest updates, features, and news!</p>
+        </hgroup>
+        <ionic-newsletter-signup arrow-mode="true" lg="true"></ionic-newsletter-signup>
+      </div>
+    </div>
+  </section>-->
+</main>
+
+{% endblock %}

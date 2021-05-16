@@ -1,0 +1,130 @@
+{% extends "_layouts/base.html" %}
+{% set id = 'about' %}
+{% set title = 'About People in Need' %}
+{% set meta_description = "People in Need is a project that provides practical support to Christian families who are suffering from the economic crisis and political instability in the Middle East." %}
+{% set cssPath = 'about' %}
+
+{% block main %}
+<div class="cta banner">
+  <hgroup class="container">
+    <h1>About Us</h1>
+    <p>
+      People in Need is a project that provides practical support to Christian families who are suffering from the economic crisis and political instability in the Middle East.
+    </p>
+  </hgroup>
+  <div class="bar tabbed" data-spy="affix" data-offset-top="375">
+    <div class="container" id="discover-nav" offset="-400">
+      <ul class="categories nav">
+        <li><a class="about active" href="/about">About Us</a></li>
+        <!--<li><a class="values" href="/values">Values</a></li>-->
+        <li><a class="active team" href="/team">Our Team</a></li>
+        <li><a class="jobs" href="/jobs">Opportunities</a></li>
+        <li><a class="contact" href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<section class="container about-us hero left">
+  <div class="graphics active-on-load" id="timeline">
+    <div class="period left">
+      <h4>The NGO worker</h4>
+      <p>
+        Fady, a Syrian Christian, moved to Lebanon in 2015
+      </p>
+    </div>
+    <div class="period right">
+      <h4>Serving Refugees</h4>
+      <p>Fady served Syrian refugee children in Zahle
+    </div>
+    <div class="period left">
+      <h4>The Visitor</h4>
+      <p>Calvin, based in the US, visited Zahle, Lebanon in 2020.</p>
+    </div>
+    <div class="period right">
+      <h4>Friendship Began</h4>
+      <p>
+        Fady welcomed Calvin into his home and they had since become close friends
+      </p>
+    </div>
+    <div class="period left">
+      <h4>A Call for Help</h4>
+      <p>
+        Fady realized that the food crisis was getting severe and issued a call for help.
+      </p>
+    </div>
+    <div class="period right">
+      <h4>First Fundraising</h4>
+      <p>Calvin got the words out in March 2020 and raised $3500 in a few weeks.</p>
+    </div>
+    <div class="period left">
+      <h4>Meeting Needs</h4>
+      <p>Fady received the donation and began distributing food supplies and other aids.</p>
+    </div>
+    <!--<div class="period right">
+      <h4>People in Need v2 announced</h4>
+      <p>First peek at People in Need Framework v2 released at London Angular Connect.</p>
+    </div>-->
+  </div>
+  <div class="content">
+    <h3>How It Started</h3>
+    <p class="lg strong">
+      Calvin visited Lebanon in January 2020 and stayed in Fady's house. They have developed a strong friendship since and decided to start this project together to help Christians in need in the Middle East.
+    </p>
+    <p class="lg strong">
+      Calvin began an appeal to give in March 2020. He was able to raise $3500 in a month. He sent the money to Fady in 3 installments, and as each batch of donation arrives, Fady would go and procure food and other supplies.
+    </p>
+    <p class="lg strong">
+      Fady has since been building a strong partnership with a local Syriac Orthodox Church in Zahle. They have allowed Fady to use the church as the distribution center so Christian families can come and pick up the supplies.
+    </p>
+  </div>
+</section>
+<section class="our">
+  <div class="container">
+    <div class="mission col-sm-5 col-sm-offset-1">
+      <h3>Our Mission</h3>
+      <p>
+        Our mission is to help, serve, and bless as the hands of Jesus. We truly believe that our work can draw many's hearts toward God as He says He will not forget His people.
+      </p>
+    </div>
+    <div class="philosophy col-sm-5">
+      <h3>Our Philosophy</h3>
+      <p>
+        Helping Christians stay in the Middle East.
+      </p>
+    </div>
+  </div>
+</section>
+<!--<section class="our-neck">
+  <div class="hero left container">
+    <div class="content">
+      <h3>Our neck of the woods</h3>
+      <p class="lg">
+        People in Need was proudly founded and headquartered in Oakland, California, USA.
+        Being a new startup, you will find us working in our coworking space, or
+        in our homes.
+      </p>
+      <p class="lg">
+        We are proud of our hometown Oakland, and want to give back to it by
+        recruiting local talents and giving back our time and resources to our
+        community.
+      </p>
+    </div>
+  </div>
+</section>-->
+
+<!--<div class="hero dark text-center">
+  <hgroup class="container">
+    <h3>We value your contributions</h3>
+    <p><a href="/values">Read about our values
+      <span class="ion-ios-arrow-round-forward-outline"></span></a></p>
+  </hgroup>
+</div>-->
+<!--{% include '_includes/promos/newsletter-signup.html' %}-->
+{% endblock %}
+
+
+{% block scripts %}
+<script>
+setTimeout(() => document.getElementById('timeline').classList.add('active'), 1500);
+</script>
+{% endblock %}

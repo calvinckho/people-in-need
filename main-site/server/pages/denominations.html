@@ -1,0 +1,248 @@
+{% extends "_layouts/base.html" %}
+{% set id = 'auth-connect' %}
+{% set title = 'Denominations' %}
+{% set header_style = 'transparent light' %}
+{% set cssPath = 'enterprise/auth-connect' %}
+
+{% block main %}
+
+<ionic-sub-header>
+  <ul class="breadcrumbs" slot="breadcrumbs">
+    <li><a class="current-site" href="#" >Features</a></li>
+    <li><a href="/denominations">Denominations</a></li>
+  </ul>
+  <ul slot="right">
+    <li><a href="" class="active">Overview</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="/resources">Resources</a></li>
+    <li><a href="/demo"><a class="btn anchor" href="/demo">Demo</a></a></div></li>
+  </ul>
+</ionic-sub-header>
+
+<div class="top container cta cta--transparent">
+  <hgroup>
+    <h3>{% include '_includes/svg/ico-auth-connect.svg' %} Denominations</h3>
+    <h1>Coaching Made easy</h1>
+    <p>Coach your entire network of pastors and leaders.</p>
+    <a class="btn green sm anchor" data-offset="-50" href="#get-started">Request a Demo</a>
+  </hgroup>
+
+  <div id="dummy-element"></div>
+
+  <div class="spinner">
+    <svg id="header-graphic" width="579" height="579" viewBox="0 0 579 579" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2"><ellipse cx="505.575" cy="379.273" rx="33.7351" ry="33.7352" transform="rotate(112.525 505.575 379.273)" stroke="#00CEAB" stroke-width="41"/><ellipse cx="72.6808" cy="199.744" rx="33.7351" ry="33.7351" transform="rotate(112.525 72.6808 199.744)" stroke="#00CEAB" stroke-width="41"/><path d="M473.366 368.876L86.7926 208.558" stroke="#00CEAB" stroke-width="41"/></g><g opacity="0.2"><ellipse cx="506.183" cy="199.39" rx="33.7351" ry="33.7352" transform="rotate(67.5247 506.183 199.39)" stroke="#00CEAB" stroke-width="41"/><ellipse cx="73.1348" cy="378.546" rx="33.7351" ry="33.7351" transform="rotate(67.5247 73.1348 378.546)" stroke="#00CEAB" stroke-width="41"/><path d="M476.056 214.813L89.3455 374.799" stroke="#00CEAB" stroke-width="41"/></g><g opacity="0.2"><ellipse cx="378.866" cy="505.984" rx="33.7351" ry="33.7352" transform="rotate(157.525 378.866 505.984)" stroke="#00CEAB" stroke-width="41"/><ellipse cx="199.71" cy="72.9356" rx="33.7351" ry="33.7351" transform="rotate(157.525 199.71 72.9356)" stroke="#00CEAB" stroke-width="41"/><path d="M363.442 475.857L203.456 89.1463" stroke="#00CEAB" stroke-width="41"/></g><g opacity="0.2"><ellipse cx="379.472" cy="72.6807" rx="33.7351" ry="33.7352" transform="rotate(22.5247 379.472 72.6807)" stroke="#00CEAB" stroke-width="41"/><ellipse cx="199.943" cy="505.575" rx="33.7351" ry="33.7351" transform="rotate(22.5247 199.943 505.575)" stroke="#00CEAB" stroke-width="41"/><path d="M369.076 104.89L208.757 491.463" stroke="#00CEAB" stroke-width="41"/></g></svg>
+  </div>
+</div>
+
+<auth-connect-promo>
+  <div id="player"></div>
+</auth-connect-promo>
+
+<nav id="sticky-bar">
+  <ul class="container nav" role="tablist">
+    <li><a class="anchor" data-offset="150" href="#learning">Learning</a></li>
+    <li><a class="anchor" data-offset="150" href="#coaching">Coaching</a></li>
+    <li><a class="anchor" data-offset="150" href="#health-score">Health Score</a></li>
+    <li><a class="anchor" data-offset="150" href="#use-cases">Use Cases</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="overview" class="container center">
+    <hgroup>
+      <h2>Coach Every Pastor</h2>
+      <p>Lower the barrier of learning and coaching for your leaders</p>
+    </hgroup>
+    <ul class="items">
+      <li>
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="24" fill="#E7F4FF"/><rect x="24.1536" y="5.83984" width="10.3424" height="10.3424" rx="1.17638" transform="rotate(45 24.1536 5.83984)" fill="#ACD8FB"/><rect x="15.6223" y="14.3718" width="10.3424" height="10.3424" rx="1.17638" transform="rotate(45 15.6223 14.3718)" fill="#ACD8FB"/><rect x="24.4583" y="23.0562" width="14.1445" height="14.1445" rx="2.35275" transform="rotate(45 24.4583 23.0562)" fill="#3598FE"/><rect x="32.6869" y="14.3718" width="10.3424" height="10.3424" rx="1.17638" transform="rotate(45 32.6869 14.3718)" fill="#ACD8FB"/></svg>
+
+        <h4>Learning</h4>
+        <p>Begin with our library of resources. Build your own curriculum and courses. Let your leaders learn at their own pace.</p>
+      </li>
+      <li>
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="24" fill="#E7F4FF"/><path d="M18 13H11V20" stroke="#ACD8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 28L11 35L18 35" stroke="#ACD8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 35L37 35L37 28" stroke="#ACD8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M37 20L37 13L30 13" stroke="#ACD8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24.5" cy="24.5" r="6.5" fill="#3598FE"/></svg>
+        <h4>Coaching</h4>
+        <p>Whether it is peer-mentoring, or bringing in professional coaches, People in Need helps you maximize their impacts on your leaders.</p>
+      </li>
+      <li>
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48"><circle cx="24" cy="24" r="24" fill="#E3EDFF"/></mask><g mask="url(#mask0)"><circle cx="24" cy="24" r="24" fill="#E7F4FF"/><rect x="-2" y="8" width="6.49999" height="2.5" rx="1.25" fill="#ACD8FB"/><rect opacity="0.7" x="8.5" y="8" width="3.25" height="2.5" rx="1.25" fill="#ACD8FB"/><rect x="45.5834" y="22.0237" width="6.49999" height="2.5" rx="1.25" fill="#ACD8FB"/><rect x="15" y="8" width="5" height="2.5" rx="1.25" fill="#ACD8FB"/><rect opacity="0.6" x="24.75" y="8" width="17.3333" height="2.5" rx="1.25" fill="#ACD8FB"/><rect x="46.0833" y="8" width="9.74999" height="2.5" rx="1.25" fill="#ACD8FB"/><rect x="-3" y="29" width="7" height="2.5" rx="1.25" fill="#ACD8FB"/><rect x="7" y="29" width="3.25" height="2.5" rx="1.25" fill="#ACD8FB"/><rect x="15.75" y="29" width="6.49999" height="2.5" rx="1.25" fill="#ACD8FB"/><rect x="37" y="29" width="17.3333" height="2.5" rx="1.25" fill="#ACD8FB"/><rect x="47.5833" y="29" width="9.74999" height="2.5" rx="1.25" fill="#ACD8FB"/><rect x="46.8333" y="45.5" width="3.25" height="2.5" rx="1.25" transform="rotate(-180 46.8333 45.5)" fill="#ACD8FB"/><rect x="39.5833" y="45.5" width="6.49999" height="2.5" rx="1.25" transform="rotate(-180 39.5833 45.5)" fill="#ACD8FB"/><rect opacity="0.6" x="29" y="45.5" width="13" height="2.5" rx="1.25" transform="rotate(-180 29 45.5)" fill="#ACD8FB"/><rect x="11.7499" y="45.5" width="9.74999" height="2.5" rx="1.25" transform="rotate(-180 11.7499 45.5)" fill="#ACD8FB"/><rect x="52.25" y="17.5713" width="13" height="2.5" rx="1.25" transform="rotate(-180 52.25 17.5713)" fill="#ACD8FB"/><rect opacity="0.05" x="35.25" y="17.5" width="6.49999" height="2.5" rx="1.25" transform="rotate(-180 35.25 17.5)" fill="#ACD8FB"/><rect opacity="0.05" x="24.75" y="17.5713" width="13" height="2.5" rx="1.25" transform="rotate(-180 24.75 17.5713)" fill="#ACD8FB"/><rect x="7.75" y="17.5" width="9.74999" height="2.5" rx="1.25" transform="rotate(-180 7.75 17.5)" fill="#ACD8FB"/><rect opacity="0.5" x="41.5834" y="24.6189" width="16" height="2.5" rx="1.25" transform="rotate(-180 41.5834 24.6189)" fill="#ACD8FB"/><rect opacity="0.6" x="18.1666" y="24.5" width="15.1667" height="2.5" rx="1.25" transform="rotate(-180 18.1666 24.5)" fill="#ACD8FB"/><rect opacity="0.6" x="27.1666" y="17.5" width="15.1667" height="2.5" rx="1.25" transform="rotate(-180 27.1666 17.5)" fill="#ACD8FB"/><rect opacity="0.6" x="35" y="18" width="4" height="3" rx="1.5" transform="rotate(-180 35 18)" fill="#ACD8FB"/><rect x="4.50006" y="38.5" width="6.49999" height="2.5" rx="1.25" transform="rotate(-180 4.50006 38.5)" fill="#ACD8FB"/><rect x="8.50006" y="36.0237" width="18.4166" height="2.5" rx="1.25" fill="#ACD8FB"/><rect opacity="0.6" x="31" y="36" width="5" height="2.5" rx="1.25" fill="#ACD8FB"/><rect opacity="0.8" x="40" y="36" width="13" height="2.5" rx="1.25" fill="#ACD8FB"/><rect x="-1" y="1.02368" width="18.4166" height="2.5" rx="1.25" fill="#ACD8FB"/><rect opacity="0.6" x="21.4999" y="1" width="5" height="2.5" rx="1.25" fill="#ACD8FB"/><rect opacity="0.8" x="30.4999" y="1" width="13" height="2.5" rx="1.25" fill="#ACD8FB"/><path d="M36.5511 21.2044C36.5511 35.0446 23.7755 40.3678 23.7755 40.3678C23.7755 40.3678 11 35.3108 11 21.2044C11 19.6688 11 14.7813 11 14.7813C11 14.7813 14.637 12 23.7755 12C32.9141 12 36.5511 14.7813 36.5511 14.7813C36.5511 14.7813 36.5511 18.917 36.5511 21.2044Z" fill="#3598FE"/><mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="11" y="12" width="26" height="29"><path d="M36.5511 21.2044C36.5511 35.0446 23.7755 40.3678 23.7755 40.3678C23.7755 40.3678 11 35.3108 11 21.2044C11 19.6688 11 14.7813 11 14.7813C11 14.7813 14.637 12 23.7755 12C32.9141 12 36.5511 14.7813 36.5511 14.7813C36.5511 14.7813 36.5511 18.917 36.5511 21.2044Z" fill="black"/></mask><g mask="url(#mask1)"><rect x="7.82147" y="10.4109" width="15.893" height="31.786" fill="#51A7FF"/></g></g></svg>
+        <h4>Care</h4>
+        <p>Early intervention in burnt-out can reduce crisis management. Our health score can help you know how best to care for your leaders.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="learning" class="container left">
+    <hgroup>
+      <h2>Lifelong Learning</h2>
+      <p>A learning hub to manage the continuing professional development and spiritual formation of your pastors. Because when they grow, so do your churches.</p>
+    </hgroup>
+    <img class="graphics" width="528" height="534" loading="lazy" src="/img/plan.svg"/>
+  </section>
+
+  <section id="coaching" class="container right">
+    <hgroup>
+      <h2>Coaching Made Easy</h2>
+      <p>Manage all your coaching relationships in one platform. Recruit and assign coaches, customize coaching plans, and collect feedbacks. We also have a built-in text and video chat so leaders can stay connected.</p>
+    </hgroup>
+    <img class="graphics" width="573" loading="lazy" src="/img/intro_3.png"/>
+  </section>
+
+  <section id="health-score" class="container left">
+    <hgroup>
+      <h2>Health Score</h2>
+      <p>Gain insights of your leaders' health. Our insight dashboard helps you see in one glance how your leaders are doing in their learning plans and coaching relationships.</p>
+    </hgroup>
+    <div class="graphics">
+      <img width="683" loading="lazy" src="/img/intro_1.png"/>
+    </div>
+  </section>
+
+  <section id="use-cases" class="container center divider">
+    <hgroup>
+      <h4>Organize Your Processes</h4>
+      <p>Some amazing things People in Need can do to support your work:</p>
+    </hgroup>
+    <ul class="features">
+      <li>
+        <strong>Credentialing</strong>
+        <p>Project manage your credentialing processes.</p>
+      </li>
+      <li>
+        <strong>Clergy Continuing Education</strong>
+        <p>Manage Clergy training, courses, and events.</p>
+      </li>
+      <li>
+        <strong>Crisis Intervention</strong>
+        <p>Offer resources on how to deal with crisis. Create support network.</p>
+      </li>
+      <li>
+        <strong>Spiritual Formation</strong>
+        <p>Build up a library of people and resources for spiritual formation efforts.</p>
+      </li>
+      <li>
+        <strong>Coaching and Developing Prospective Leaders</strong>
+        <p>Create a resource center for prospective leaders. Pair them up with mentors.</p>
+      </li>
+      <li>
+        <strong>Consultation Service for Churches</strong>
+        <p>Manage and monitor progress of consultation services. Collect feedbacks.</p>
+      </li>
+    </ul>
+  </section>
+
+  <aside id="get-started">
+    <div class="container get-started center hubspot-override hubspot-override--large hubspot-override--measure">
+      <hgroup class="content">
+        <h3>Get started with</h3>
+        <h2>Your Learning Platform</h2>
+        <p>Our consulting team is ready to meet with you, understand your unique needs, and onboard your entire leadership team.</p>
+      </hgroup>
+      <!--[if lte IE 8]>
+      <script charset="utf-8"
+              type="text/javascript"
+              src="//js.hsforms.net/forms/v2-legacy.js"></script>
+      <![endif]-->
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+      <script>
+        hbspt.forms.create({
+          portalId: "4389946",
+          formId: "d8e1040c-cb7f-4d7d-a938-94600f522c04"
+        });
+      </script>
+    </div>
+  </aside>
+</main>
+
+<section class="resources">
+  <div class="container">
+    <additional-resources page="auth-connect"></additional-resources>
+  </div>
+</section>
+
+{% include '_includes/promos/newsletter-signup.html' %}
+<div class="modal collapse fade modal--form"
+     id="modal-data-sheet"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="promo--ionic-for-enterprise">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body form hubspot-override hubspot-override--large">
+        <button type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <hgroup class="hero text-center">
+          <h2>Building Cross-Platform  Apps with Capacitor</h2>
+          <p class="lg">Fill out the form below to download our free whitepaper</p>
+        </hgroup>
+        <!--[if lte IE 8]>
+        <script charset="utf-8"
+                type="text/javascript"
+                src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8"
+                type="text/javascript"
+                src="//js.hsforms.net/forms/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            portalId: "3776657",
+            formId: "9151dc0b-42d9-479f-b7b8-649e0e7bd1bc",
+            css: ""
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  $('body').scrollspy({ target: '#sticky-bar', offset: 250 })
+</script>
+<script>
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '100%',
+      width: '100%',
+      videoId: 'sUICR8og2cw',
+      events: {
+        'onReady': onPlayerReady,
+        onStateChange: e => {
+          if (e.data === YT.PlayerState.ENDED) {
+            player.playVideo();
+          }
+        }
+      },
+      playerVars: {
+        rel: 0
+      }
+    });
+  }
+
+  function onPlayerReady(event) {
+    document.querySelector('auth-connect-promo .play-circle').addEventListener('click', () => {
+      setTimeout(() => {
+        event.target.playVideo();
+      }, 500)
+    });
+
+    document.querySelector('#backdrop').addEventListener('click', () => {
+      event.target.stopVideo();
+    });
+  }
+</script>
+<script src="https://www.youtube.com/iframe_api"></script>
+{% endblock %}

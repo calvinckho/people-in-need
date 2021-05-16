@@ -1,0 +1,128 @@
+{% import "_includes/macros.html" as macros %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{% if dev %}
+  {% if not noGlobalStyles %}
+  <link href="/css/styles.css" rel="stylesheet">
+  {% endif %}
+{% else %}
+  {% if not noGlobalStyles %}
+  <link href="/css/styles.min.css" rel="stylesheet">
+  {% endif %}
+{% endif %}
+
+{% if cssPath %}
+  {{ macros.pageSpecificCSS(dev, cssPath) }}
+{% endif %}
+
+{% if title %}
+  <title>{{title}}</title>
+{% elif 'products-' in id %}
+  <title>People in Need - {{ id | replace('products-','') | title}}</title>
+{% elif isEnterprise %}
+  <title>People in Need - {{ id | replace('enterprise-','') | replace("-", " ") | title}}</title>
+{% elif name %}
+  <title>People in Need - {{name}}</title>
+{% elif id %}
+  <title>People in Need - {{id | replace("-", " ") | title}}</title>
+{% else %}
+  <title>People in Need</title>
+{% endif %}
+
+{% if 'products' in id %}
+  {% if not meta_image %}
+    {% set meta_image = 'https://ivrbot.s3.us-west-000.backblazeb2.com/app/icon.png' %}
+  {% endif %}
+  {% if not meta_description %}
+    {% set meta_description = "People in Need provides virtual phone assistant service to help businesses capture 100% of their opportunities in their incoming calls." %}
+  {% endif %}
+  {% set meta_keywords = "ivr,virtual,phone,assistant,answering,tree,automated,service,voice,response,system,call,routing,voice" %}
+{% endif %}
+
+{% if meta_description %}
+  <meta name="description" content="{{ meta_description }}">
+{% endif %}
+
+<meta name="author" content="Ionic">
+<meta name="keywords" content="{% if meta_keywords %}{{ meta_keywords }}{% else %}ivr,virtual,phone,assistant,answering,tree,automated,service,voice,response,system,call,routing,voice{% endif %}">
+{% if meta_canonical %}
+  <link rel="canonical" href="{{meta_canonical}}">
+{% else %}
+  <link rel="canonical" href="https://ivr.solutions{{requrl}}">
+{% endif %}
+
+<!-- Social: Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@restvoinc">
+<meta name="twitter:creator" content="restvoinc">
+{% if title %}
+  <meta name="twitter:title" content="{{title}}">
+{% elif name %}
+  <meta name="twitter:title" content="People in Need - {{name}}">
+{% elif id %}
+  <meta name="twitter:title" content="People in Need - {{id | title}}">
+{% else %}
+  <meta name="twitter:title" content="People in Need">
+{% endif %}
+<meta name="twitter:description" content="{% if meta_description %}{{ meta_description }}{% else %}People in Need provides virtual phone assistant service to help businesses capture 100% of their opportunities in their incoming calls.{% endif %}">
+<meta name="twitter:image" content="{% if meta_image %}{{meta_image}}{% else %}https://ivrbot.s3.us-west-000.backblazeb2.com/app/icon.png{% endif %}">
+
+<!-- Social: Facebook / Open Graph -->
+<meta property="fb:page_id" content="1321836767955949">
+<meta property="og:url" content="https://ivr.solutions{{url}}">
+<meta property="og:type" content="article">
+{% if title %}
+  <meta property="og:title" content="{{title}}">
+{% elif name %}
+  <meta property="og:title" content="People in Need - {{name}}">
+{% elif id %}
+  <meta property="og:title" content="People in Need - {{id | title}}">
+{% else %}
+  <meta property="og:title" content="People in Need">
+{% endif %}
+<meta property="og:image" content="/img/meta/favicon-32x32.png"/>
+<meta property="og:description" content="{% if meta_description %}{{ meta_description }}{% else %}People in Need is a project that provides practical support to Christian families who are suffering from the economic crisis and political instability in the Middle East.{% endif %}">
+<meta property="og:site_name" content="People in Need">
+<meta property="article:publisher" content="https://www.facebook.com/RestvoInc">
+<meta property="og:locale" content="en_US" />
+
+{% if favicons %}
+{% for icon in favicons %}
+<link rel="icon" type="image/png" href="{{icon[0]}}" sizes="{{icon[1]}}">
+{% endfor %}
+{% else %}
+<link rel="icon" type="image/png" href="/img/meta/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/img/meta/favicon-32x32.png" sizes="32x32">
+{% endif %}
+<link rel="manifest" href="/manifest.json">
+
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/img/meta/ms-icon-70x70.png">
+<meta name="msapplication-TileImage" content="/img/meta/ms-icon-144x144.png">
+{% if not themeColor %}
+<meta name="theme-color" content="#4c8fff">
+{% else %}
+<meta name="theme-color" content="{{themeColor}}">
+{% endif %}
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% if recaptcha %}
+<script src="https://www.google.com/recaptcha/api.js?render=6LfbcKAUAAAAACUDq_t59TP8MawQXB37DVEeSOjZ"></script>
+{% endif %}
+
+{% if not noGlobalStencil %}
+<script type="module" src="/js/stencil/ionic-site-components/ionic-site-components.esm.js"></script>
+<script nomodule src="/js/stencil/ionic-site-components.js"></script>
+{% endif %}
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-976QC5596C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-976QC5596C');
+</script>

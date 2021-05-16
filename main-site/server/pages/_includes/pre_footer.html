@@ -1,0 +1,41 @@
+<section id="pre-footer" class="continue">
+  <ul class="container">
+    {% if id == "home" %}
+      <li class="getting-started">
+        <a href="/getting-started" id="btn-prefooter-getting-started">Getting
+          started</a>
+        <p>
+          Learn more about how to set up a demo Phone Assistant. We'll cover the basics
+          and get you started from the ground up.
+        </p>
+      </li>
+    {% else %}
+      <li class="forum">
+        <a href="https://github.com/calvinckho/restvo-app/issues" id="btn-prefooter-forum">
+          Developer Forum</a>
+        <p>
+          Stop by and say hello. The Forum is the best place to connect, ask a
+          question, or help out other People in Need developers!
+        </p>
+      </li>
+    {% endif %}
+    {% if id == "docs-home" %}
+      <li class="blog">
+        <a href="https://blog.ionicframework.com" id="btn-prefooter-blog">Check
+          out our blog</a>
+        <p>
+          Stay up to date on what's new. We post regular updates on People in Need,
+          tutorials, Creator, and our Cloud Services.
+        </p>
+      </li>
+    {% else %}
+      <li class="explor-docs">
+        <a href="/resources/documentation" id="btn-prefooter-docs">Explore the docs</a>
+        <p>
+          Take a look and get started! Our documentation covers all you need to
+          know to get your community set up in minutes.
+        </p>
+      </li>
+    {% endif %}
+  </ul>
+</section>

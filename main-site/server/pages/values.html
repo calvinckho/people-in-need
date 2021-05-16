@@ -1,0 +1,63 @@
+{% extends "_layouts/base.html" %}
+{% set id = 'values' %}
+{% set title = 'People in Need Core Values' %}
+{% set header_style = 'transparent light' %}
+{% set cssPath = 'values' %}
+
+{% block main %}
+
+<div class="cta banner">
+  <hgroup class="container">
+    <h1>What we believe</h1>
+    <p>Our values define us, and stay with us for the long haul.</p>
+  </hgroup>
+  <div class="bar tabbed" data-spy="affix" data-offset-top="375">
+    <div class="container" id="discover-nav" offset="-400">
+      <ul class="categories nav">
+        <li><a class="about" href="/about">About Us</a></li>
+        <li><a class="active values" href="/values">Values</a></li>
+        <li><a class="team" href="/team">Our Team</a></li>
+        <li><a class="jobs" href="/jobs">Jobs</a></li>
+        <li><a class="contact" href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<dl class="container">
+<!--  <hgroup class="container made-of">
+    <ul style="list-style-type: none; font-size: 18px; margin-top: 10px">
+      <li><b>R</b>esonate core values</li>
+      <li><b>E</b>mpathy over apathy</li>
+      <li><b>S</b>imple beats complex</li>
+      <li><b>T</b>eam before self</li>
+      <li><b>V</b>ision of innovation</li>
+      <li><b>O</b>riginality not banality</li>
+    </ul>
+  </hgroup>-->
+
+  <dt><span>1</span>Small Business Owners</dt>
+  <dd>
+    We believe in small business owners, because we own a small mobile vet clinic too. We want to support what you do, so you can serve your clients better.
+  </dd>
+  <dt><span>2</span>Quality Customer Service</dt>
+  <dd>
+    Though it takes technical excellance, it all comes down to the people we serve. Offering an intuitive, helpful, and intelligent virtual assistant does not take away from good customer service. It adds to it.
+  </dd>
+  <dt><span>3</span>Enjoy What You Do Best</dt>
+  <dd>
+    Once set up, we want you to enjoy what you do best. Now that the mundane and repetitive are taken care of by the assistant, you can truly embrace what you are good at. Let your work nourish your soul.
+  </dd>
+  <dt><span>4</span>It Will Keep Getting Better</dt>
+  <dd>
+    We are very excited about the future of the virtual phone assistant technology. We know we can make it better, so in the end your have a virtual assistant that will continue to bring value to your business. We have strong faith in the future of our service.
+  </dd>
+</dl>
+
+<div class="hero text-center">
+  <hgroup class="container">
+    <h3>Meet the team behind our amazing Assistant</h3>
+    <p><a href="/team" class="btn white">meet the team</a></p>
+  </hgroup>
+</div>
+
+{% endblock %}

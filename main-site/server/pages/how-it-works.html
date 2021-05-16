@@ -1,0 +1,127 @@
+{% extends '_layouts/base.html' %}
+{% set id = 'what-is-ionic' %}
+{% set title = "How it works" %}
+{% set meta_description = 'Explains how the People in Need virtual phone assistant works' %}
+{% set header_style = 'transparent light' %}
+
+{% block main %}
+<hgroup class="banner container">
+  <h1>
+    How It Works
+  </h1>
+  <p>The Phone Assistant and its script are fully customizable. Below is an example of how the assistant works at a sample business.</p>
+</hgroup>
+<main>
+  <section class="left what">
+    <div class="container">
+      <div class="content">
+        <h2>Greetings</h2>
+        <p>
+          When the call is picked up, the assistant says:
+        </p>
+        <p class="sm bubble">
+          Thank you for calling the Loving Veterinarian Clinic. To hear our availability and to request an appointment, Press 1. to listen to a list of our services, press 2. If you want us to call you back, Press 3
+        </p>
+        <!--<ul>
+          <li class="html"></li>
+          <li class="css"></li>
+          <li class="js"></li>
+        </ul>-->
+      </div>
+      <div class="graphic">
+        <img src="/img/ivrbot.png"
+             width="350"
+             alt="Greetings by the Assistant"/>
+      </div>
+    </div>
+  </section>
+  <section class="right kit">
+    <div class="container">
+      <div class="graphic">
+        <img src="/img/online-calendar.png"
+             width="448"
+             loading="lazy"
+             alt="People in Need at the center of your tech stack"/>
+      </div>
+      <div class="content">
+        <h2>Appointment Availability</h2>
+        <p>
+          In Main Menu #1, the assistant reads out the available appointment slots:
+        </p>
+        <p class="sm bubble">
+          Tuesday, May 1, 10am. If you want to request this appointment time, Press 1. to hear the next available appointment time, Press 2. to skip to the following day, Press 3. to hear this option again, Press 4.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="left teams">
+    <div class="container">
+      <div class="content">
+        <h2>Secure the Appointment Booking</h2>
+        <p>
+          After the caller selected a time slot, the assistant says:
+        </p>
+        <p class="sm bubble">
+          To secure this appointment time, we can send a link to your mobile number, so you can complete the registration process. Press 1 to receive the link on your mobile number. Press 2 to go back to the main menu.
+        </p>
+        <!--<p class="call-to-action">
+          <a href="/about">
+            Learn about People in Need Enterprise
+            <ion-icon name="ios-arrow-forward"></ion-icon>
+          </a>
+        </p>-->
+      </div>
+      <div class="graphic">
+        <img src="/img/sms.png" loading="lazy" width="466" alt="Airbus">
+      </div>
+    </div>
+  </section>
+  <section class="right kit">
+    <div class="container">
+      <div class="graphic">
+        <img src="/img/happy-customer.png"
+             width="448"
+             loading="lazy"
+             alt="People in Need at the center of your tech stack"/>
+      </div>
+      <div class="content">
+        <h2>Caller Becomes Customer</h2>
+        <p>
+          Once the caller completes a simple registration process on the phone, he has successfully booked himself to use the service at the designated time. The booking system then sends him an email and SMS confirming the request, and will also send a message to remind him the day before the appointment.
+        </p>
+        <p class="call-to-action">
+          <a href="/resources/articles/integration-with-the-acuity-scheduler">
+            Read more on Booking System Integration
+            <ion-icon name="ios-arrow-forward"></ion-icon>
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--<section class="center web">
+    <div class="container">
+      <h4>Our Philosophy</h4>
+      <h2>Why we’re betting on the web</h2>
+      <p>
+        The web has served developers well for the last twenty years, and we
+        think that makes it a pretty great bet for the next twenty. It
+        represents the most stable and time-tested universal runtime in the
+        world. And today, the web is the best and only way to deliver the
+        seamless experience that users have come to expect as they interact with
+        apps across platforms and devices, between desktop and mobile.
+      </p>
+  </section>-->
+</main>
+
+<section class="resources">
+  <div class="container">
+    <additional-resources page="enterprise-pricing"></additional-resources>
+  </div>
+</section>
+<!--{% include '_includes/promos/start-shipping.html' %}-->
+
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}

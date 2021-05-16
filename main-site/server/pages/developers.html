@@ -1,0 +1,43 @@
+{% extends "_layouts/base.html" %}
+{% set id = 'developers' %}
+{% set title = 'People in Need in Website' %}
+{% set meta_description = "People in Need can be embedded in a regular church website." %}
+{% set cssPath = 'developers' %}
+{% set stickyNav = true %}
+
+{% block main %}
+
+<div class="cta gradient">
+  <hgroup class="container center">
+    <h1>Small Group Ministry</h1>
+    <p>Choose a Small Group below to learn more</p>
+  </hgroup>
+</div>
+
+<!--<section class="container primary">
+  <div class="items">
+    <a href="/docs/v2/" class="framework">
+      <hgroup>
+        <h2>People in Need Web App</h2>
+        <p>
+          Browse People in Need Framework components, api, plugins, theming, and CLI
+          documentation and guides.
+        </p>
+      </hgroup>
+    </a>
+    <a href="/docs/appflow" class="platform">
+      <hgroup>
+        <h2>People in Need Mobile App</h2>
+        <p>
+          Get the most out of People in Need Appflow, People in Need's suite of powerful app development
+          features for professional developers.
+        </p>
+      </hgroup>
+    </a>
+  </div>
+</section>-->
+
+<section class="container">
+  <iframe src="https://ivr.solutions/app" style="width: 100%; height: 100vh"></iframe>
+</section>
+{% endblock %}

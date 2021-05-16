@@ -1,0 +1,189 @@
+{% extends '_layouts/base.html' %}
+{% set id = 'native' %}
+{% set pre_footer = false %}
+{% set title = "Non-profits" %}
+{% set meta_image = 'https://ionicframework.com/img/meta/native-ogimg.png'%}
+{% set meta_description = '' %}
+{% set header_style = 'transparent light' %}
+{% set stickyNav = false %}
+{% set cssPath = 'enterprise/platform' %}
+
+{% block main %}
+
+<ionic-sub-header>
+  <ul class="breadcrumbs" slot="breadcrumbs">
+    <li><a class="current-site" href="#" >Features</a></li>
+    <li><a href="/nonprofits">Non-profits</a></li>
+  </ul>
+  <ul slot="right">
+    <li><a href="" class="active">Overview</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="/resources">Resources</a></li>
+    <li><a href="/demo"><a class="btn anchor" href="/demo">Demo</a></a></div></li>
+  </ul>
+</ionic-sub-header>
+
+<hgroup class="container ee-hero ee-hero--centered">
+  <h1>Non-profits</h1>
+  <p>Simplify your volunteers onboarding and training.</p>
+</hgroup>
+
+<main class="ee-main">
+  <section id="app-builder" class="container left">
+    <div class="content">
+      <h4 class="ee-section__title">Volunteers</h4>
+      <h2>Onboarding</h2>
+      <p>
+        Streamline how you onboard and train your volunteers and staff. You can begin with our library of tools and customize your own content.
+      </p>
+    </div>
+    <div class="graphics">
+      <img src="/img/enterprise/platform/app-builder-graphic.png"
+           alt="Onboarding">
+    </div>
+  </section>
+  <div id="education"></div>
+  <section id="oss" class="container right">
+    <div class="content">
+      <h4 class="ee-section__title">Community</h4>
+      <h2>Education</h2>
+      <p>As a non-profit, you have a lot to offer to the community by way of education.</p>
+      <p class="sm">
+        Your context provides ample of opportunity for deeper reflection and learning. You can combine assigned reading, discussion, service projects, and mentoring to form a rich educational experience for your people.
+      </p>
+      <!--<ul class="frameworks">
+        <li class="frameworks__angular"></li>
+        <li class="frameworks__react"></li>
+        <li class="frameworks__vue"></li>
+        <li class="frameworks__js"></li>
+      </ul>-->
+    </div>
+    <div class="graphics">
+      <img src="/img/intro_2.png"
+           loading="lazy"
+           width="1579" height="1536"
+           alt="Education">
+    </div>
+  </section>
+
+  <!--<section id="devops" class="container left">
+    <div class="content">
+      <h4 class="ee-section__title">DevOps</h4>
+      <h2>Ship continuously</h2>
+      <p>Automate every phase of app delivery - from native app builds to realtime updates - all from a central hub with secure access for the whole team.</p>
+    </div>
+    <div class="graphics">
+      <img  src="/img/enterprise/platform/devops-graphic.png"
+            alt="Appflow"
+            loading="lazy"
+            width="2070" height="1268"/>
+    </div>
+  </section>
+
+  <section id="integrations" class="center">
+    <div class="content container">
+      <h4 class="ee-section__title">Integrations</h4>
+      <h2>Yes, we integrate with that</h2>
+      <p>
+        From community plugins to premium supported integrations, People in Need has you
+        covered. Unlock unmatched native power, speed, and core functionality
+        across all your apps.
+      </p>
+    </div>
+    <ul id="integration-list" class="integration-list">
+      <li><img src="/img/homepage/integrations/paypal-integration.png" loading="lazy" width="256" height="256" alt="Paypal"/></li>
+      <li><img src="/img/homepage/integrations/heroku-integration.png" loading="lazy" width="256" height="256" alt="Heroku"/></li>
+      <li><img src="/img/homepage/integrations/couchbase-integration.png" loading="lazy" width="256" height="256" alt="Couchbase"/></li>
+      <li><img src="/img/homepage/integrations/aws-amplify-integration.png" loading="lazy" width="256" height="256" alt="AWS Amplify"/></li>
+      <li><img src="/img/homepage/integrations/android-fingerprint-integration.png" loading="lazy" width="256" height="256" alt="Android Fingerprint"/></li>
+      <li><img src="/img/homepage/integrations/apple-faceid-integration.png" loading="lazy" width="256" height="256" alt="Apple FaceID"/></li>
+      <li><img src="/img/homepage/integrations/active-directory-integration.png" loading="lazy" width="256" height="256" alt="Active Directory"/></li>
+      <li><img src="/img/homepage/integrations/apple-pay-integration.png" loading="lazy" width="256" height="256" alt="ApplePay"/></li>
+      <li><img src="/img/homepage/integrations/firebase-integration.png" loading="lazy" width="256" height="256" alt="Firebase"/></li>
+      <li><img src="/img/homepage/integrations/google-maps-integration.png" loading="lazy" width="256" height="256" alt="Google Maps"/></li>
+      <li><img src="/img/homepage/integrations/ios-camera-plugin-integration.png" loading="lazy" width="256" height="256" alt="Camera"/></li>
+      <li><img src="/img/homepage/integrations/sqlite-integration.png" loading="lazy" width="256" height="256" alt="SQLite"/></li>
+      <li><img src="/img/homepage/integrations/stripe-integration.png" loading="lazy" width="256" height="256" alt="Stripe"/></li>
+      <li><img src="/img/homepage/integrations/touch-id-ios-integration.png" loading="lazy" width="256" height="256" alt="TouchID"/></li>
+    </ul>
+  </section>-->
+
+  <section id="advisory" class="container cta-card left">
+    <div class="content">
+      <h4 class="ee-section__title">Consultation</h4>
+      <h2>Expert help for non-profit teams</h2>
+      <p>Reach your educational goals by talking to our team members.</p>
+    </div>
+  </section>
+
+  {% include '_includes/promos/how-to-get-started.html' %}
+  <div style="height: 90px;"></div>
+</main>
+
+<!--<aside id="ee-get-started" >
+  <div class="container get-started center hubspot-override hubspot-override&#45;&#45;large hubspot-override&#45;&#45;measure">
+    <hgroup class="content">
+      <h3>Learn more about</h3>
+      <h2>People in Need for Non-profits</h2>
+    </hgroup>
+    <script charset="utf-8"
+            type="text/javascript"
+            src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+    <script>
+      hbspt.forms.create({
+        portalId: "4389946",
+        formId: "d8e1040c-cb7f-4d7d-a938-94600f522c04"
+      });
+    </script>
+  </div>
+</aside>-->
+
+<section class="resources">
+  <div class="container">
+    <additional-resources page="native"></additional-resources>
+  </div>
+</section>
+
+{% include '_includes/promos/newsletter-signup.html' %}
+<div class="modal collapse fade modal--form"
+     id="modal-data-sheet"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="promo--ionic-for-enterprise">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body form hubspot-override hubspot-override--large">
+        <button type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <hgroup class="hero text-center">
+          <h2>Building Cross-Platform  Apps with Capacitor</h2>
+          <p class="lg">Fill out the form below to download our free whitepaper</p>
+        </hgroup>
+        <!--[if lte IE 8]>
+        <script charset="utf-8"
+                type="text/javascript"
+                src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+        <script>
+          hbspt.forms.create({
+            portalId: "4389946",
+            formId: "d8e1040c-cb7f-4d7d-a938-94600f522c04"
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  $('body').scrollspy({ target: '#sticky-bar', offset: 250 })
+</script>
+{% endblock %}

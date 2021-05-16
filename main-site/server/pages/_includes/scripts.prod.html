@@ -1,0 +1,27 @@
+<script>
+  window.API_URL = "{{ API_URL }}";
+  window.DASHBOARD_URL = "{{ DASHBOARD_URL }}";
+</script>
+
+{% if dev %}
+  <script src="/js/ionic-site.js?v=cf73a7764f866c88d64a47a0c3af6da0"></script>
+{% else %} 
+  <script src="/js/ionic-site.min.js?v=fb632f86f89b5b3852173581a77dbbe4"></script>
+{% endif %}
+
+{% if dev or PRISMIC_PREVIEW %}
+<script>
+  window.prismic = {
+    endpoint: 'https://middleeast.cdn.prismic.io/api/v2'
+  };
+</script>
+<script type="text/javascript" src="https://static.cdn.prismic.io/prismic.min.js"></script>
+{% endif %}
+
+{% if stickyNav %}
+<script>
+  stickyNav && stickyNav.init();
+</script>
+{% endif %}
+
+{% if page.footer_includes %}{{ page.footer_includes }}{% endif %}

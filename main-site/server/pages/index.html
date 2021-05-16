@@ -1,0 +1,451 @@
+{% extends '_layouts/base.html' %}
+{% set title = "People in Need - Serve Middle East Christians" %}
+{% set id = "home" %}
+{% set pre_footer = false %}
+{% set header_style = 'transparent light' %}
+{% set meta_description = "People in Need provides virtual phone assistant service to help businesses capture 100% of their opportunities in their incoming calls" %}
+{% set stickyNav = true %}
+{% set cssPath = 'home' %}
+
+{% block main %}
+<div id="ionic-slider">
+  <section id="slide-ionic-react" class="container">
+    <div class="landing__content">
+      <h1>
+        <span class="activateOnScroll">Helping</span>
+        <!--<span class="activateOnScroll">A learning platform. </span>-->
+        <span class="activateOnScroll"><span class="rotate"><a href="/" class="underline react">Christian Families</a><a href="/" class="underline angular">in the Middle East</a></span></span>
+      </h1>
+      <p class="activateOnScroll"><span class="darken">People in Need</span> is a project that provides practical support to Christian families who are suffering from the economic crisis and political instability in the Middle East.</p>
+      <div class="btn__group activateOnScroll">
+        <a href="https://app.restvo.com/app/activity/609f0919305ddc45b528a764" class="btn dark">Give Today</a>
+        <!--<a href="/resources" class="btn light">Explore</a>-->
+      </div>
+      <!--<a href="/enterprise/support" class="activateOnScroll">Or speak with our learning consultant <ion-icon name="arrow-forward-outline"></ion-icon></a>-->
+    </div>
+    <div class="landing__img">
+      <img src="/img/elias.jpg">
+    </div>
+  </section>
+
+
+  <!--<aside>
+    <div class="container">
+      <ul class="stats">
+        <li class="stars">
+          <a href="https://github.com/calvinckho/restvo-app" title="Github Stars" id="btn-home-gh-stars">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 0C3.58214 0 0 3.675 0 8.20357C0 11.8286 2.29286 14.9 5.47143 15.9857C5.52143 15.9964 5.56429 16 5.60714 16C5.90357 16 6.01786 15.7821 6.01786 15.5929C6.01786 15.3964 6.01071 14.8821 6.00714 14.1964C5.70714 14.2643 5.43929 14.2929 5.2 14.2929C3.66071 14.2929 3.31071 13.0964 3.31071 13.0964C2.94643 12.15 2.42143 11.8964 2.42143 11.8964C1.725 11.4071 2.41786 11.3929 2.47143 11.3929H2.475C3.27857 11.4643 3.7 12.2429 3.7 12.2429C4.1 12.9429 4.63571 13.1393 5.11429 13.1393C5.48929 13.1393 5.82857 13.0179 6.02857 12.925C6.1 12.3964 6.30714 12.0357 6.53571 11.8286C4.76071 11.6214 2.89286 10.9179 2.89286 7.775C2.89286 6.87857 3.20357 6.14643 3.71429 5.575C3.63214 5.36786 3.35714 4.53214 3.79286 3.40357C3.79286 3.40357 3.85 3.38571 3.97143 3.38571C4.26071 3.38571 4.91429 3.49643 5.99286 4.24643C6.63214 4.06429 7.31429 3.975 7.99643 3.97143C8.675 3.975 9.36071 4.06429 10 4.24643C11.0786 3.49643 11.7321 3.38571 12.0214 3.38571C12.1429 3.38571 12.2 3.40357 12.2 3.40357C12.6357 4.53214 12.3607 5.36786 12.2786 5.575C12.7893 6.15 13.1 6.88214 13.1 7.775C13.1 10.925 11.2286 11.6179 9.44643 11.8214C9.73214 12.075 9.98929 12.575 9.98929 13.3393C9.98929 14.4357 9.97857 15.3214 9.97857 15.5893C9.97857 15.7821 10.0893 16 10.3857 16C10.4286 16 10.4786 15.9964 10.5286 15.9857C13.7107 14.9 16 11.825 16 8.20357C16 3.675 12.4179 0 8 0Z" fill="#92A1B3"/>
+            </svg>
+            7
+          </a>
+        </li>
+        <li class="forks">
+          <a href="https://github.com/calvinckho/restvo-app" title="Github Forks" id="btn-home-gh-forks">
+            <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 4.57143C11 3.31071 10.0134 2.28571 8.8 2.28571C7.58656 2.28571 6.6 3.31071 6.6 4.57143C6.6 5.41786 7.04344 6.15357 7.7 6.55V6.85714C7.7 7.56786 7.43188 8.06071 6.83031 8.46071C6.30094 8.81071 5.52063 9.07143 4.51 9.22857C4.02875 9.30357 3.62656 9.44286 3.3 9.61071V4.26429C3.95656 3.86786 4.4 3.13214 4.4 2.28571C4.4 1.025 3.41344 0 2.2 0C0.986563 0 0 1.025 0 2.28571C0 3.13214 0.443437 3.86786 1.1 4.26429V11.7357C0.443437 12.1321 0 12.8679 0 13.7143C0 14.975 0.986563 16 2.2 16C3.41344 16 4.4 14.975 4.4 13.7143C4.4 13.1214 4.18344 12.5821 3.82594 12.175C3.89125 12 4.15938 11.5929 4.83656 11.4857C6.17031 11.2786 7.205 10.9179 8.00938 10.3857C9.24687 9.57143 9.9 8.35 9.9 6.85714V6.55C10.5566 6.15357 11 5.41786 11 4.57143ZM2.2 0.857143C2.95969 0.857143 3.575 1.49643 3.575 2.28571C3.575 3.075 2.95969 3.71429 2.2 3.71429C1.44031 3.71429 0.825 3.075 0.825 2.28571C0.825 1.49643 1.44031 0.857143 2.2 0.857143ZM2.2 15.1429C1.44031 15.1429 0.825 14.5036 0.825 13.7143C0.825 12.925 1.44031 12.2857 2.2 12.2857C2.95969 12.2857 3.575 12.925 3.575 13.7143C3.575 14.5036 2.95969 15.1429 2.2 15.1429ZM8.8 6C8.04031 6 7.425 5.36071 7.425 4.57143C7.425 3.78214 8.04031 3.14286 8.8 3.14286C9.55969 3.14286 10.175 3.78214 10.175 4.57143C10.175 5.36071 9.55969 6 8.8 6Z" fill="#92A1B3"/>
+            </svg>
+            22
+          </a>
+        </li>
+        <li class="followers">
+          <a href="https://twitter.com/restvoinc" title="Twitter followers" id="btn-home-twitter-followers">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 1.65885C15.41 1.93958 14.7794 2.12917 14.1149 2.21667C14.793 1.77917 15.3151 1.08646 15.5592 0.2625C14.9252 0.667187 14.2234 0.9625 13.474 1.11927C12.8739 0.430208 12.0195 0 11.0769 0C9.26298 0 7.79487 1.58229 7.79487 3.53281C7.79487 3.8099 7.822 4.07969 7.87963 4.33854C5.15024 4.19271 2.72939 2.78542 1.1121 0.645312C0.830685 1.16667 0.667938 1.77552 0.667938 2.42083C0.667938 3.64583 1.25111 4.72865 2.13266 5.36302C1.59017 5.34844 1.08159 5.18802 0.640814 4.92188V4.96562C0.640814 6.67917 1.77326 8.10469 3.27527 8.42917C3.00064 8.50938 2.70905 8.55313 2.41068 8.55313C2.20047 8.55313 1.99364 8.53125 1.7936 8.4875C2.21064 9.89114 3.42445 10.912 4.86205 10.9411C3.73978 11.8891 2.32253 12.4542 0.783217 12.4542C0.518754 12.4542 0.257682 12.4359 0 12.4031C1.44776 13.4167 3.17355 14 5.02479 14C11.0701 14 14.3725 8.6151 14.3725 3.94479C14.3725 3.79167 14.3691 3.63854 14.3624 3.48906C15.0032 2.98958 15.5592 2.36979 16 1.65885Z" fill="#92A1B3"/>
+            </svg>
+            21
+          </a>
+        </li>
+      </ul>
+      <ionic-newsletter-signup
+        homepage-mode="true"
+        placeholder="Join our Newsletter"
+        srOnly="Enter Email to join mailing list."></ionic-newsletter-signup>
+    </div>
+  </aside>-->
+</div>
+
+<main>
+
+  <section id="agnostic" class="right container">
+    <img class="activateOnScroll"
+         src="/img/war.jpg"
+         loading="lazy"
+         width="560" height="372"
+         alt="War in Syria"><!--srcset="/img/homepage/frameworks-1x.png 1x, /img/homepage/frameworks.png 2x"-->
+    <hgroup class="content">
+      <!--<h4 class="activateOnScroll">Background</h4>-->
+      <h2 class="activateOnScroll">Why <span class="highlight">Middle East</span> Christians?</h2>
+      <p class="activateOnScroll">
+        During the Syrian civil war, many families, including Christians, fled to Lebanon.
+      </p>
+      <a href="/resources/articles/how-christians-are-affected-by-the-syrian-war" class="cta">How Christians Are Affected by the War?</a>
+    </hgroup>
+  </section>
+
+  <section id="performance" class="left container">
+    <hgroup class="content">
+      <!--<h4 class="activateOnScroll">High Availability</h4>-->
+      <h2 class="activateOnScroll">A <span class="highlight">Gap</span><br> in Aids.</h2>
+      <p class="activateOnScroll">
+        The UN and many NGOs work exclusively with people in the UN-sponsored encampments, most of the beneficiaries are Arab Muslims. On the other hand, Christian families were not welcomed and had to rent apartments, which make them ineligible to receive UN aids.
+      </p>
+      <a href="/resources/articles/why-arent-christians-living-in-tents" class="cta">Why Aren't Christians in Tents?</a>
+    </hgroup>
+    <img class="graphics activateOnScroll"
+         src="/img/tents.jpg"
+         loading="lazy"
+         width="560" height="372"
+         alt="NGO-sponsored Tents">
+  </section>
+
+  <section id="performance" class="right container">
+    <img class="graphics activateOnScroll"
+         src="/img/lira.png"
+         loading="lazy"
+         width="560" height="372"
+         alt="Lira Lost Value"><!--srcset="/img/homepage/frameworks-1x.png 1x, /img/homepage/frameworks.png 2x"-->
+    <hgroup class="content">
+      <!--<h4 class="activateOnScroll">The Lebanese Economic Crisis</h4>-->
+      <h2 class="activateOnScroll">The <span class="highlight">Economic Crisis</span> in Lebanon</h2>
+      <p class="activateOnScroll">
+        The Lebanon economy has been in free fall since 2020. The pandemic only deepens the misery. Many Christians lost their jobs or got paid with little wages. Therefore, many of them are now living under the poverty line.
+      </p>
+      <a href="https://www.mei.edu/publications/lebanons-economic-crisis-tragedy-making" target="_blank" class="cta">About the Crisis</a>
+    </hgroup>
+  </section>
+
+  <section id="build-with-web" class="container split">
+    <hgroup>
+      <h2 class="activateOnScroll">Responding to Real Needs</h2>
+      <p class="activateOnScroll">
+        We did our first fundraising and raised $3500 in April 2021. We helped 170 families in need; we gave away a lot of food packages and supported 45 individuals with their healthcare expenses.
+      </p>
+    </hgroup>
+    <ul>
+      <li class="activateOnScroll" style="padding-top: 0px">
+        <img src="/img/kids.jpg"
+             loading="lazy"
+             width="288" height="228"
+             alt="Food Distributions"><!--srcset="/img/homepage/run-anywhere-1x.png 1x, /img/homepage/run-anywhere.png 2x"-->
+        <h5>Food</h5>
+        <p>
+          Food distribution, especially for families with little kids
+        </p>
+      </li>
+      <li class="activateOnScroll" style="padding-top: 43px">
+        <img src="/img/visit.jpg"
+             loading="lazy"
+             width="288" height="228"
+             alt="Health Care Needs">
+        <h5>Health Care</h5>
+        <p>
+          Cash assistance for people in need for healthcares (NCD patients, ventilators for covid 19 patients, surgeries...etc)
+        </p>
+      </li>
+      <li class="activateOnScroll" style="padding-top: 43px">
+        <img src="/img/counseling.jpg"
+             loading="lazy"
+             width="288" height="228"
+             alt="Visitation">
+        <h5>Counseling</h5>
+        <p>
+          Sharing the Word of God through our visits to render spiritual support.
+        </p>
+      </li>
+    </ul>
+  </section>
+  <div class="overflow-mask performance-background">
+    <section id="performance" class="left container">
+      <hgroup class="content">
+        <!--<h4 class="activateOnScroll">High Availability</h4>-->
+        <h2 class="activateOnScroll">We are a <span class="highlight">Big Family</span><br></h2>
+        <p class="activateOnScroll">
+         By God's grace, we have helped Middle East Christians regain their dignity as God's children and shine for Him in the Middle East.
+        </p>
+        <a href="/" class="cta">Read Our Reports</a>
+      </hgroup>
+      <!--<img class="graphics activateOnScroll"
+           src="/img/dashboard.png"
+           loading="lazy"
+           width="560" height="408"
+           alt="Angular, React, Vue, and Plain 'ole Javascript">-->
+      <ul class="graphics activateOnScroll">
+        <li>
+          <span>
+            <strong>170<sub>+</sub></strong>
+            Families Served
+          </span>
+        </li>
+        <li>
+          <span>
+            <strong>45<sub>+</sub></strong>
+            Medical Bills Paid
+          </span>
+        </li>
+        <li>
+          <span>
+            <strong>10+<sub><small></small></sub></strong>
+             Donors
+          </span>
+        </li>
+        <li>
+          <span>
+            <strong>1<sub></sub></strong>
+               Partner Local Syriac Church
+          </span>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <section id="start">
+    <div class="container">
+      <hgroup>
+        <h3 class="activateOnScroll">Our Vision</h3>
+        <p class="activateOnScroll">Our mission is to help, serve, and bless as the hands of Jesus. We truly believe that our work can draw many's hearts toward God as He says He will not forget His people.</p>
+      </hgroup>
+      <a href="https://app.restvo.com/app/activity/609f0919305ddc45b528a764" class="btn white">
+        Ways to Help
+        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!--<circle opacity="0.24" cx="9" cy="8" r="8" fill="#51A7FF"/>
+          <rect x="9" y="14" width="10" height="2" fill="#4D8DFF"/>-->
+          <path d="M1 1L8 8L1 15" stroke="#4D8DFF" stroke-width="2"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!--{% include '_includes/promos/quad-cta.html' %}-->
+</main>
+{% endblock %}
+
+{% block modals %}
+{#<div class="modal collapse fade"
+     id="contactForm"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+                onClick="mixpanel.track('Form Close', {'test': 'Enterprise - 1'})">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <hgroup class="text-center">
+          <h3>Thank you for your interest in our eBook!</h3>
+          <p class="lg">
+            We just need some basic information so we can send the eBook your
+            way.
+          </p>
+        </hgroup>
+        <script charset="utf-8"
+                async
+                type="text/javascript"
+                src="https://js.hsforms.net/forms/v2.js"></script>
+        <script>
+            hbspt.forms.create({
+              portalId: '3776657',
+              formId: '8883f3dd-d97c-4719-aaef-4132038af0c1'
+            });
+        </script>
+      </div>
+    </div>
+  </div>
+</div>#}
+{% endblock %}
+
+{% block scripts %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ionic",
+  "alternateName": "Drifty",
+  "url": "https://ionicframework.com",
+  "logo": "https://ionicframework.com/img/meta/logo.png",
+  "sameAs": [
+    "https://twitter.com/restvoinc",
+    "https://www.instagram.com/ionicframework",
+    "https://www.facebook.com/RestvoInc/",
+    "https://www.linkedin.com/company/drifty-co-/"
+  ]
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script>
+
+
+  window.flow = function() {
+  var sizes = ["s", "m", "l"],
+      iconLWidth = 256,
+      container = document.getElementById("integration-list"),
+      icons = document.querySelectorAll("#integration-list img"),
+      resizeTimer,
+      w, h;
+  // debounce the re-init so it doesn't totally freak out while draging
+  window.addEventListener('resize', resizeDebounce);
+  function resizeDebounce() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(init, 250);
+  }
+  function init() {
+    w = container.offsetWidth;
+    h = container.offsetHeight;
+    icons.forEach(function(icon, i) {
+      var size = sizes[Math.ceil(Math.random() * 3) -1];
+      TweenMax.set(
+        icon, {
+          attr: {class: size},
+          y: R(50, h - 150),
+          x: R(w, w + 50)
+        }
+      );
+      animate(icon, i);
+    });
+  }
+  // animate x and y values at different rates
+  function animate(element, i) {
+    TweenMax.to(
+      element,
+      R(110,120),
+      {
+        x: -1500,
+        ease: Linear.easeNone,
+        repeat:-1,
+        delay: -115 / icons.length * i
+      }
+    );
+    TweenMax.to(
+      element,
+      R(6,16),
+      {
+        y: '+=50',
+        repeat: -1,
+        yoyo: true,
+        ease: Sine.easeInOut,
+        delay: R(-16, -6)
+      }
+    );
+  };
+  function R(min,max) {
+    return min + Math.random() * (max-min)
+  };
+  return {
+    init: init
+  }
+}().init();
+
+window.testimonials = function() {
+  // Testimonials rotation
+  const $testimonials = document.getElementById('testimonials');
+  let testimonialIntervalID = null;
+  let queued = false;
+  const $highlight = document.getElementById('testimonials__highlight');
+
+  function activateNextQuote() {
+    const $oldSpeaker = deactivateSpeaker();
+    let $active = null;
+    // go back to the beginning if at the end
+    if (!$oldSpeaker.nextElementSibling) {
+      $active = $testimonials.querySelector('.quotees li:first-child');
+    } else {
+      $active = $oldSpeaker.nextElementSibling;
+    }
+
+    setActive($active);
+  }
+
+  // what happens if a speaker is clicked
+  function handleClick(event) {
+    deactivateSpeaker();
+
+    // activate the clicked speaker
+    setActive(event.currentTarget);
+
+    // stop the rotation for a bit
+    // the queued check prevents the rotation from starting multiple times
+    // if the user clicks another speaker before the rotation restarts
+    clearInterval(testimonialIntervalID);
+    if (! queued) {
+      queued = true;
+      setTimeout(start, 13000);
+    }
+  }
+
+  function start() {
+    queued = false;
+    testimonialIntervalID = setInterval(activateNextQuote, 8000);
+  }
+
+  // finds and deacivates just the current speaker, not the quote
+  function deactivateSpeaker() {
+    const $speaker = $testimonials.querySelector('.quotees .is-active')
+    $speaker.classList.remove('is-active');
+    return $speaker;
+  }
+
+  // add is-active classes to the passed quotee and their related quote
+  function setActive($speaker) {
+    $speaker.classList.add('is-active');
+    // deactivate the old quote first
+    $testimonials.querySelector('blockquote.is-active').classList.remove('is-active');
+    $testimonials.querySelector(`blockquote.${$speaker.dataset.speaker}`).classList.add('is-active');
+    updateHighlight($speaker);
+  }
+
+  // update the speaker highlight position
+  function updateHighlight($active) {
+    // get $active element if it is not passed
+    if (!$active) {
+      $active = $testimonials.querySelector('.quotees .is-active');
+    }
+    // console.log('updating');
+
+    const $ul = $testimonials.querySelector('.quotees');
+    $highlight.style.top = `${$active.offsetTop + $ul.offsetTop}px`;
+    $highlight.style.left = `${$active.offsetLeft + $ul.offsetLeft}px`;
+    $highlight.style.height = `${$active.offsetHeight}px`;
+    $highlight.style.width = `${$active.offsetWidth}px`;
+  }
+
+  function addListeners() {
+    for (let $quotee of $testimonials.querySelectorAll('.quotees li')) {
+      $quotee.addEventListener('click', handleClick);
+    }
+  }
+
+  // check the highlight position when the page resizes
+  let resizeTimer;
+  window.addEventListener('resize', function(e) {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(updateHighlight, 150);
+  });
+
+  // kick things off
+  updateHighlight();
+  addListeners();
+  start();
+  }();
+
+
+const integrationsSec = document.querySelector('#integrations');
+const options = {
+  rootMargin: '1000px',
+  threshold: 1.0,
+}
+
+const observer = new IntersectionObserver((entries) => {
+  if(entries[0].isIntersecting) {
+    observer.unobserve(entries[0].target);
+    load();
+  }
+}, options);
+
+observer.observe(integrationsSec);
+</script>
+{% endblock %}

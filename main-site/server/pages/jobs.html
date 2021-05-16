@@ -1,0 +1,437 @@
+{% extends "_layouts/base.html" %}
+{% set id = 'jobs' %}
+{% set cssPath = 'jobs-1' %}
+
+{% block main %}
+<div class="cta banner">
+  <hgroup class="container">
+    <h1>Volunteering</h1>
+    <p>
+      You have what it takes to make a difference
+    </p>
+  </hgroup>
+  <div class="bar tabbed" data-spy="affix" data-offset-top="375">
+    <div class="container" id="discover-nav" offset="-400">
+      <ul class="categories nav">
+        <li><a class="about" href="/about">About Us</a></li>
+        <!--<li><a class="values" href="/values">Values</a></li>-->
+        <li><a class="active team" href="/team">Our Team</a></li>
+        <li><a class="jobs" href="/jobs">Opportunities</a></li>
+        <li><a class="contact" href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<section class="open-positions container">
+  <hgroup class="text-center">
+    <h3>Opportunities</h3>
+    <p>
+      Here are some ways your can get involved with your gifts and talents.
+    </p>
+  </hgroup>
+  <div id='lever-jobs-container'></div>
+  <div id="lever-jobs-container">
+    <ul class="lever-team" data-team="Customer Success">
+      <li>
+        <h4 class="lever-team-title">Fundraising</h4>
+        <ul>
+          <li class="lever-job" data-department="Uncategorized" data-team="Customer Success" data-location="Madison, WI - HQ" data-work-type="Remote - USA"><a class="lever-job-title" href="mailto:ch235@cornell.edu" target="_blank">Fundraising Coordinator</a><span class="lever-job-tag">Remote</span></li>
+        </ul>
+      </li>
+    </ul>
+    <!--<ul class="lever-team" data-team="Engineering">
+      <li>
+        <h4 class="lever-team-title">Engineering</h4>
+        <ul>
+          <li class="lever-job" data-department="Uncategorized" data-team="Engineering" data-location="Madison, WI - HQ" data-work-type="Remote - USA"><a class="lever-job-title" href="mailto:ch235@cornell.edu" target="_blank">Software Engineering Intern</a><span class="lever-job-tag">Remote</span></li>
+          &lt;!&ndash;<li class="lever-job" data-department="Uncategorized" data-team="Engineering" data-location="Madison, WI - HQ" data-work-type="Remote - USA"><a class="lever-job-title" href="mailto:ch235@cornell.edu" target="_blank">Technical Writer</a><span class="lever-job-tag">Madison, WI - HQ</span></li>&ndash;&gt;
+        </ul>
+      </li>
+    </ul>
+    <ul class="lever-team" data-team="Sales">
+      <li>
+        <h4 class="lever-team-title">UX/UI Design</h4>
+        <ul>
+          <li class="lever-job" data-department="Uncategorized" data-team="Sales" data-location="Madison, WI - HQ" data-work-type="Remote - USA"><a class="lever-job-title" href="mailto:ch235@cornell.edu" target="_blank">UX/UI Intern</a><span class="lever-job-tag">Remote</span></li>
+          &lt;!&ndash;<li class="lever-job" data-department="Uncategorized" data-team="Sales" data-location="Madison, WI - HQ" data-work-type="Remote - USA"><a class="lever-job-title" href="https://jobs.lever.co/Ionic/66e27322-2e44-4595-82de-047bc47bcc6d" target="_blank">Enterprise Sales Engineer</a><span class="lever-job-tag">Madison, WI - HQ</span></li>
+          <li class="lever-job" data-department="Uncategorized" data-team="Sales" data-location="Madison, WI - HQ" data-work-type="Remote - USA"><a class="lever-job-title" href="https://jobs.lever.co/Ionic/ad8acb84-8149-4682-be3a-2c096e1ea482" target="_blank">Sales Ops Manager</a><span class="lever-job-tag">Madison, WI - HQ</span></li>&ndash;&gt;
+        </ul>
+      </li>
+    </ul>-->
+  </div>
+  <!--<script type='text/javascript'>
+    window.leverJobsOptions = {accountName: 'Ionic', includeCss: false};
+  </script>-->
+</section>
+<!--<section class="hero top container what-we">
+  <img class="graphics" loading="lazy" width="2200" height="720" src="/img/jobs/ionic-photos-1.jpg"/>
+  <div class="content">
+    <div class="col">
+      <h3>What we do</h3>
+      <p>
+        We work to empower developers to build high quality, interactive, and
+        beautiful mobile apps with the web technologies they already know and
+        love.
+      </p>
+      <p>
+        We believe there’s a huge opportunity to bring the web to mobile and
+        that we are the company to do it best.
+      </p>
+    </div>
+    <div class="col">
+      <h3>What we look for</h3>
+      <p>
+        We’re always searching for smart, driven, and talented people to join
+        our team in Madison, San Francisco, or remotely (for specified positions
+        only).
+      </p>
+      <p>
+        We look for great communicators who have the ability to empathize with
+        others, and a passion for learning.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="why hero top container">
+  <img class="graphics" loading="lazy" width="2200" height="720" src="/img/jobs/ionic-photos-2.jpg"/>
+  <div class="content text-center">
+    <h3>Why People in Need?</h3>
+    <p>
+      We’re not your typical tech company. We weren’t built in the valley - or
+      by it. We’re a developer built, design focused, product obsessed team of
+      open sourcers.
+    </p>
+  </div>
+</section>
+<section class="reasons container">
+  <div class="reason">
+    <h4>A healthy city to call home</h4>
+    <p>
+      Our HQ is located in downtown Madison, WI. The city’s
+      bike-friendliness, affordability, and world-class University make it a great
+      place to set down roots.
+    </p>
+  </div>
+  <div class="reason">
+    <h4>We &lt;3 open source</h4>
+    <p>
+      Our team is dedicated to producing world-class open source <a
+      href="https://ionicframework.com" target="_blank">projects</a>. We engage
+      with our community and welcome feedback and pull requests.
+    </p>
+  </div>
+  <div class="reason">
+    <h4>Have ownership</h4>
+    <p>
+      At People in Need, we know our teammates are best in class at what they do. That’s
+      why they're given trust, independence, and ownership over their work.
+    </p>
+  </div>
+  <div class="reason">
+    <h4>A welcoming environment</h4>
+    <p>
+      People in Need is a welcoming place for everyone, and we do our best to make sure
+      our teammates feel supported and connected here at all times.
+    </p>
+  </div>
+  <div class="reason">
+    <h4>Make an impact</h4>
+    <p>
+      Work on open source projects and products that are used by millions of
+      people all over the world. Help change the way the world builds mobile.
+    </p>
+  </div>
+  <div class="reason">
+    <h4>Love what you do</h4>
+    <p>
+      More than anything else, People in Need is a company that wants you to love what
+      you do. We take pride in creating a place where people love to work.
+    </p>
+  </div>
+</section>
+<section class="bennefits">
+  <div class="container content">
+    <h3>Benefits</h3>
+    <ul>
+      <li>Health, dental, and vision benefits offered</li>
+      <li>Competitive salary + equity</li>
+      <li>A 401(k) plan</li>
+      <li>Generous paid time off and sick leave</li>
+      <li>Flexible work hours and locations</li>
+      <li>Work with top-of-the-line equipment</li>
+      <li>Healthy office drinks &amp; snacks</li>
+      <li>Weekly team lunches and monthly outings</li>
+      <li>A beautiful downtown Madison office</li>
+      <li>Office dogs. Lots of office dogs.</li>
+    </ul>
+  </div>
+</section>-->
+<div class="hero dark text-center">
+  <hgroup class="container">
+    <h3>Got a question?</h3>
+    <p><a href="/contact">Contact Us
+      <span class="ion-ios-arrow-round-forward-outline"></span></a></p>
+  </hgroup>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+// swap out with the external script when this PR gets merged
+// https://github.com/andreasmb/lever-jobs-embed/pull/11
+window.loadLeverJobs = function (options) {
+
+  //Checking for potential Lever source or origin parameters
+  var pageUrl = window.location.href;
+  var leverParameter = '';
+  var trackingPrefix = '?lever-';
+  options.accountName = options.accountName;
+  // Define the container where we will put the content (or put in the body)
+  var jobsContainer = document.getElementById("lever-jobs-container") || document.body;
+
+  if( pageUrl.indexOf(trackingPrefix) >= 0){
+    // Found Lever parameter
+    var pageUrlSplit = pageUrl.split(trackingPrefix);
+    leverParameter = '?lever-'+pageUrlSplit[1];
+  }
+
+  var htmlTagsToReplace = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;'
+  };
+
+  function replaceTag(tag) {
+      return htmlTagsToReplace[tag] || tag;
+  }
+
+  //For displaying titles that contain brackets in the 'append' function
+  function sanitizeForHTML(str) {
+      if (typeof str == 'undefined' ) {
+        return '';
+      }
+      return str.replace(/[&<>]/g, replaceTag);
+  }
+
+  //Functions for checking if the variable is unspecified and removing script tags + null check
+  //For making class names from department and team names
+  function sanitizeAttribute(string) {
+    if (string == '' || typeof string == 'undefined' ) {
+      return 'uncategorized';
+    }
+    string = sanitizeForHTML(string);
+    return string.replace(/\s+/ig, "");
+  }
+
+  // Adding the account name to the API URL
+  var url = 'https://api.lever.co/v0/postings/' + options.accountName + '?group=team&mode=json';
+
+  //Create an object ordered by department and team
+  function createJobs(responseData) {
+    if (!responseData) return;
+
+    //Older versions of IE might not interpret the data as a JSON object
+    if(typeof responseData === "string") {
+      responseData = JSON.parse(responseData);
+    }
+
+    var content = "";
+    var groupedPostings = [];
+
+    for(var i = 0; i < responseData.length; i++) {
+      if (!responseData[i]) continue;
+      if (!responseData[i].postings) continue;
+      if (!(responseData[i].postings.length > 0)) continue;
+
+      var title = sanitizeForHTML(responseData[i].title || 'Uncategorized');
+      var titlesanitizeAttribute = sanitizeAttribute(title);
+
+
+      for (j = 0; j < responseData[i].postings.length; j ++) {
+        var posting = responseData[i].postings[j];
+        var team = (posting.categories.team || 'Uncategorized' );
+        var teamsanitizeAttribute = sanitizeAttribute(team);
+        var department = (posting.categories.department || 'Uncategorized' );
+        var departmentsanitizeAttribute = sanitizeAttribute(department);
+        var link = posting.hostedUrl+leverParameter;
+
+        function findDepartment(element) {
+          return element.department == departmentsanitizeAttribute;
+        }
+
+        if (groupedPostings.findIndex(findDepartment) === -1) {
+
+          newDepartmentToAdd = {department : departmentsanitizeAttribute, departmentTitle: department, teams : [ {team: teamsanitizeAttribute, teamTitle: team, postings : []} ] };
+          groupedPostings.push(newDepartmentToAdd);
+        }
+        else {
+
+          departmentIndex = groupedPostings.findIndex(findDepartment);
+          newTeamToAdd = {team: teamsanitizeAttribute, teamTitle: team, postings : []};
+
+          if (groupedPostings[departmentIndex].teams.map(function(o) { return o.team; }).indexOf(teamsanitizeAttribute) === -1) {
+            groupedPostings[departmentIndex].teams.push(newTeamToAdd);
+          }
+        }
+        function findTeam(element) {
+          return element.team == teamsanitizeAttribute;
+        }
+        departmentIndex = groupedPostings.findIndex(findDepartment);
+        teamIndex = groupedPostings[departmentIndex].teams.findIndex(findTeam);
+        groupedPostings[departmentIndex].teams[teamIndex].postings.push(posting);
+
+      }
+
+    }
+
+    // Sort by department
+    groupedPostings.sort(function(a, b) {
+      var departmentA=a.department.toLowerCase(), departmentB=b.department.toLowerCase()
+      if (departmentA < departmentB)
+          return -1
+      if (departmentA > departmentB)
+          return 1
+      return 0
+    });
+
+    for(var i = 0; i < groupedPostings.length; i++) {
+
+      // If there are no departments used, there is only one "unspecified" department, and we don't have to render that.
+      if (groupedPostings.length >= 2) {
+        var haveDepartments = true;
+      };
+
+      if (haveDepartments) {
+        content += '<section class="lever-department" data-department="' + groupedPostings[i].departmentTitle + '"><h3 class="lever-department-title">' + sanitizeForHTML(groupedPostings[i].departmentTitle) + '</h3>';
+      };
+
+      for (j = 0; j < groupedPostings[i].teams.length; j ++) {
+
+        content += '<ul class="lever-team" data-team="' + groupedPostings[i].teams[j].teamTitle + '"><li><h4 class="lever-team-title">' + sanitizeForHTML(groupedPostings[i].teams[j].teamTitle) + '</h4><ul>';
+
+        for (var k = 0; k < groupedPostings[i].teams[j].postings.length; k ++) {
+          content += '<li class="lever-job" data-department="' + groupedPostings[i].departmentTitle +'" data-team="' + groupedPostings[i].teams[j].postings[k].categories.team + '" data-location="' + groupedPostings[i].teams[j].postings[k].categories.location + '"data-work-type="' + groupedPostings[i].teams[j].postings[k].categories.commitment + '">' +
+          '<a class="lever-job-title" href="' + groupedPostings[i].teams[j].postings[k].hostedUrl + '" target="_blank">' + sanitizeForHTML(groupedPostings[i].teams[j].postings[k].text) + '</a><span class="lever-job-tag">' + (sanitizeForHTML(groupedPostings[i].teams[j].postings[k].categories.location) || '') + '</span></li>';
+        }
+
+        content += '</ul></li></ul>';
+
+      }
+      if (haveDepartments) {
+        content += '</section>';
+      };
+    }
+
+    content += '</ul>';
+    jobsContainer.innerHTML = content;
+    window.dispatchEvent(new Event('leverJobsRendered'));
+  }
+
+  if (options.includeCss) {
+    function addCss(fileName) {
+      var head = document.head
+        , link = document.createElement('link');
+
+      link.type = 'text/css';
+      link.rel = 'stylesheet';
+      link.href = fileName;
+
+      head.appendChild(link);
+    }
+    addCss('https://andreasmb.github.io/lever-jobs-embed/embed-css/style.css');
+  }
+
+  var request = new XMLHttpRequest();
+  request.open('GET', url, true);
+  request.responseType = "json";
+
+  request.onload = function() {
+    if (request.status == 200) {
+      createJobs(request.response);
+    } else {
+      console.log("Error fetching jobs.");
+      jobsContainer.innerHTML = "<p class='lever-error'>Error fetching jobs.</p>";
+    }
+  };
+
+  request.onerror = function() {
+    console.log("Error fetching jobs.");
+    jobsContainer.innerHTML = "<p class='lever-error'>Error fetching jobs.</p>";
+  };
+
+  request.send();
+
+
+};
+
+window.loadLeverJobs(window.leverJobsOptions);
+
+
+
+// IE polyfill for findIndex - found at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
+
+if (!Array.prototype.findIndex) {
+  Object.defineProperty(Array.prototype, 'findIndex', {
+    value: function(predicate) {
+     // 1. Let O be ? ToObject(this value).
+      if (this == null) {
+        throw new TypeError('"this" is null or not defined');
+      }
+
+      var o = Object(this);
+
+      // 2. Let len be ? ToLength(? Get(O, "length")).
+      var len = o.length >>> 0;
+
+      // 3. If IsCallable(predicate) is false, throw a TypeError exception.
+      if (typeof predicate !== 'function') {
+        throw new TypeError('predicate must be a function');
+      }
+
+      // 4. If thisArg was supplied, let T be thisArg; else let T be undefined.
+      var thisArg = arguments[1];
+
+      // 5. Let k be 0.
+      var k = 0;
+
+      // 6. Repeat, while k < len
+      while (k < len) {
+        // a. Let Pk be ! ToString(k).
+        // b. Let kValue be ? Get(O, Pk).
+        // c. Let testResult be ToBoolean(? Call(predicate, T, « kValue, k, O »)).
+        // d. If testResult is true, return k.
+        var kValue = o[k];
+        if (predicate.call(thisArg, kValue, k, o)) {
+          return k;
+        }
+        // e. Increase k by 1.
+        k++;
+      }
+
+      // 7. Return -1.
+      return -1;
+    },
+    configurable: true,
+    writable: true
+  });
+}
+
+// IE Polyfill for New Event
+
+(function () {
+
+  if ( typeof window.CustomEvent === "function" ) return false;
+
+  function CustomEvent ( event, params ) {
+    params = params || { bubbles: false, cancelable: false, detail: undefined };
+    var evt = document.createEvent( 'CustomEvent' );
+    evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+    return evt;
+   }
+
+  CustomEvent.prototype = window.Event.prototype;
+
+  window.CustomEvent = CustomEvent;
+})();
+</script>
+{% endblock %}
