@@ -22,7 +22,7 @@ const resources = {
       },
       {
         "type": "Article",
-        "title": "Why Aren't Christians Living In Tents",
+        "title": "Why Christians Chose Not to Live in Tents?",
         "url": "/resources/articles/why-arent-christians-living-in-tents",
         "target": "_self",
         "action": "Read",
