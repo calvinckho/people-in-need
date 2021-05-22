@@ -27,7 +27,7 @@ module.exports = {
     // don't index non production URLs, but favor HTTPS
     res.locals.protocol = 'https';
     if (
-      req.hostname.indexOf('ivr.solutions') == -1
+      req.hostname.indexOf('people.restvo.com') == -1
     ) {
       res.setHeader('X-Robots-Tag', 'noindex, nofollow');
       res.locals.protocol = 'http';
