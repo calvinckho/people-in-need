@@ -13,7 +13,7 @@ const resources = {
     items: [
       {
         "type": "Article",
-        "title": "How Christians Are Affected by the Syrian War?",
+        "title": "How Are Christians Affected by the Syrian War?",
         "url": "/resources/articles/how-christians-are-affected-by-the-syrian-war",
         "target": "_self",
         "action": "Read",
