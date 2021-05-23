@@ -10,6 +10,8 @@ function linkResolver(doc) {
   // Define the url depending on the document type
   if (doc.type === 'article') {
     return '/resources/articles/' + doc.uid;
+  } else if (doc.type === 'report') {
+    return '/resources/report/' + doc.uid;
   } else if (doc.type === 'case_study') {
     return '/resources/case-studies/' + doc.uid;
   } else if (doc.type === 'documentation') {

@@ -132,6 +132,8 @@ module.exports = {
       res.render('resources/category', {currentCategory: req.params.category}))
     .get('/resources/articles/:article', getPrismicAPI, (req, res, next) =>
       getPrismic(req, res, next, 'article', req.params.article, 'resources/article'))
+    .get('/resources/report/:report', getPrismicAPI, (req, res, next) =>
+        getPrismic(req, res, next, 'report', req.params['report'], 'resources/report'))
     .get('/resources/case-studies/:caseStudy', getPrismicAPI, (req, res, next) =>
       getPrismic(req, res, next, 'case_study', req.params['caseStudy'], 'resources/case-studies'))
     .get('/resources/documentation/:documentation', getPrismicAPI, (req, res, next) =>

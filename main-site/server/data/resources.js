@@ -39,9 +39,9 @@ const resources = {
         "bgColor": "#4F82FF"
       }/*,
       {
-        "type": "Article",
-        "title": "A Word on Anxiety",
-        "url": "/resources/articles/a-word-on-anxiety",
+        "type": "Report",
+        "title": "Report (April - May 2021)",
+        "url": "/resources/reports/report-april-may-2021",
         "target": "_self",
         "action": "Read",
         "bgImage": "/img/resource-center/article-capacitor-vs-cordova.png",
@@ -58,15 +58,15 @@ const resources = {
       }*/
     ]
   },
-  "documentation": {
-    title: "Documentations",
+  "report": {
+    title: "Reports",
     description: "Documentations showcasing best in class Ionic-built apps from some of the best companies in the world.",
     meta_description: 'Read how Ionic customers have leveraged Ionic solutions to achieve success on business critical projects within their organizations.',
     items: [
       {
-        "type": "Documentation",
-        "title": "Integration with the Acuity Scheduler",
-        "url": "/resources/documentation/integration-with-the-acuity-scheduler",
+        "type": "Report",
+        "title": "Report (April - May 2021)",
+        "url": "/resources/report/report-april-may-2021",
         "target": "_self",
         "action": "Read",
         "bgImage": "/img/resource-center/state-of-app-card.png",
