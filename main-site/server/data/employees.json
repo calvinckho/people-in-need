@@ -3,16 +3,14 @@
     "name":"Calvin Ho",
     "dept":"US Coordinator",
     "description":null,
-    "twitter":"https://twitter.com/restvocalvinho",
+    "twitter":"https://twitter.com/calvin_c_ho",
     "linkedin":"https://www.linkedin.com/in/calvin-ho-1426536",
     "image": "/img/team/calvin.jpg"
   },
   {
     "name":"Fady Youssef",
     "dept":"Middle East Coordinator",
-    "description":null,
-    "twitter":"https://twitter.com/restvocalvinho",
-    "linkedin":"https://www.linkedin.com/in/calvin-ho-1426536",
-    "image": "/img/team/fady.jpg"
+    "description": null,
+    "image": "/img/team/fady.png"
   }
 ]
