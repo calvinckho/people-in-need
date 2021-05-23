@@ -17,7 +17,7 @@ const resources = {
         "url": "/resources/articles/how-christians-are-affected-by-the-syrian-war",
         "target": "_self",
         "action": "Read",
-        "bgImage": "/img/resource-center/roi-hybrid-native-card.png",
+        "bgImage": "/img/resource-center/article-why-developers-love-ionic.png",
         "bgColor": "#4F82FF"
       },
       {
@@ -26,18 +26,18 @@ const resources = {
         "url": "/resources/articles/why-arent-christians-living-in-tents",
         "target": "_self",
         "action": "Read",
-        "bgImage": "/img/resource-center/article-why-developers-love-ionic.png",
+        "bgImage": "/img/resource-center/ionic-vs-reactnative-card.png",
         "bgColor": "#4F82FF"
-      }/*,
+      },
       {
         "type": "Article",
-        "title": "We Love Acts 29!",
-        "url": "/resources/articles/love-acts-29",
+        "title": "Lebanon Economic Crisis",
+        "url": "/resources/articles/lebanon-economic-crisis",
         "target": "_self",
         "action": "Read",
-        "bgImage": "/img/resource-center/article-ionic-react-vs-react-native.png",
-        "bgColor": "#282E37"
-      },
+        "bgImage": "/img/resource-center/roi-hybrid-native-card.png",
+        "bgColor": "#4F82FF"
+      }/*,
       {
         "type": "Article",
         "title": "A Word on Anxiety",
