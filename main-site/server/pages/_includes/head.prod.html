@@ -32,7 +32,7 @@
 
 {% if 'products' in id %}
   {% if not meta_image %}
-    {% set meta_image = 'https://people.restvo.com/img/logo.png' %}
+    {% set meta_image = 'https://people-need.org/img/logo.png' %}
   {% endif %}
   {% if not meta_description %}
     {% set meta_description = "People in Need provides practica assistance to Christians in the Middle East." %}
@@ -49,7 +49,7 @@
 {% if meta_canonical %}
   <link rel="canonical" href="{{meta_canonical}}">
 {% else %}
-  <link rel="canonical" href="https://people.restvo.com{{requrl}}">
+  <link rel="canonical" href="https://people-need.org{{requrl}}">
 {% endif %}
 
 <!-- Social: Twitter -->
@@ -66,11 +66,11 @@
   <meta name="twitter:title" content="People in Need">
 {% endif %}
 <meta name="twitter:description" content="{% if meta_description %}{{ meta_description }}{% else %}People in Need provides assistance to Christians in the Middle East.{% endif %}">
-<meta name="twitter:image" content="{% if meta_image %}{{meta_image}}{% else %}https://people.restvo.com/img/logo.png{% endif %}">
+<meta name="twitter:image" content="{% if meta_image %}{{meta_image}}{% else %}https://people-need.org/img/logo.png{% endif %}">
 
 <!-- Social: Facebook / Open Graph -->
 <meta property="fb:page_id" content="1321836767955949">
-<meta property="og:url" content="https://people.restvo.com{{url}}">
+<meta property="og:url" content="https://people-need.org{{url}}">
 <meta property="og:type" content="article">
 {% if title %}
   <meta property="og:title" content="{{title}}">
@@ -81,10 +81,10 @@
 {% else %}
   <meta property="og:title" content="People in Need">
 {% endif %}
-<meta property="og:image" content="/img/meta/favicon-32x32.png"/>
+<meta property="og:image" content="/img/elias.jpg"/>
 <meta property="og:description" content="{% if meta_description %}{{ meta_description }}{% else %}People in Need is a project that provides practical support to Christian families who are suffering from the economic crisis and political instability in the Middle East.{% endif %}">
 <meta property="og:site_name" content="People in Need">
-<meta property="article:publisher" content="https://www.facebook.com/RestvoInc">
+<meta property="article:publisher" content="https://www.facebook.com/ho.calvin">
 <meta property="og:locale" content="en_US" />
 
 {% if favicons %}

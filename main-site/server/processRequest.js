@@ -27,7 +27,7 @@ module.exports = {
     // don't index non production URLs, but favor HTTPS
     res.locals.protocol = 'https';
     if (
-      req.hostname.indexOf('people.restvo.com') == -1
+      req.hostname.indexOf('people-need.org') == -1
     ) {
       res.setHeader('X-Robots-Tag', 'noindex, nofollow');
       res.locals.protocol = 'http';
@@ -83,7 +83,7 @@ module.exports = {
       // latestBlog: lbs.getLatestPost()
     });
 
-    res.setHeader('Link', '<https://people.restvo.com/assets/fonts/eina/eina-01-bold.woff2>;rel=preload;as=font;type=font/woff2;crossorigin=anonymous,<https://people.restvo.com/assets/fonts/inter/Inter-variable-ASCII-subset.woff2>;rel=preload;as=font;type=font/woff2;crossorigin=anonymous');
+    res.setHeader('Link', '<https://people-need.org/assets/fonts/eina/eina-01-bold.woff2>;rel=preload;as=font;type=font/woff2;crossorigin=anonymous,<https://people-need.org/assets/fonts/inter/Inter-variable-ASCII-subset.woff2>;rel=preload;as=font;type=font/woff2;crossorigin=anonymous');
 
     return next();
   }
