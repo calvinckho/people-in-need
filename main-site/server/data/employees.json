@@ -13,34 +13,6 @@
     "dept":"Middle East Coordinator",
     "description": null,
     "email":"mailto:fady.usf6@gmail.com",
-    "image": "/img/team/fady.png"
-  },
-  {
-    "name":"Grace Wakim",
-    "dept":"Field Coordinator",
-    "description": null,
-    "email":"mailto:grace.wakim1995@gmail.com",
-    "image": "/img/team/grace.jpg"
-  },
-  {
-    "name":"Yazan Fallouh",
-    "dept":"Volunteer",
-    "description": null,
-    "email":"mailto:yazen.93.yf@gmail.com",
-    "image": "/img/team/yazen-fallouh.jpg"
-  },
-  {
-    "name":"Yazan Semaan",
-    "dept":"Volunteer",
-    "description": null,
-    "email":"mailto:yazansamaan0@gmail.com",
-    "image": "/img/team/yazen-semaan.jpg"
-  },
-  {
-    "name":"Elias Fallouh",
-    "dept":"Volunteer",
-    "description": null,
-    "email":"mailto:elias.fallouh95@gmail.com",
-    "image": "/img/team/elias.jpg"
+    "image": "/img/team/fady.jpg"
   }
 ]
