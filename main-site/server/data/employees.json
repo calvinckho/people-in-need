@@ -1,7 +1,7 @@
 [
   {
     "name":"Calvin Ho",
-    "dept":"US Coordinator",
+    "dept":"US Volunteer, Advocate, Tech School Instructor",
     "description":null,
     "email":"mailto:ch235@cornell.edu",
     "twitter":"https://twitter.com/calvin_c_ho",
@@ -10,9 +10,16 @@
   },
   {
     "name":"Fady Youssef",
-    "dept":"Middle East Coordinator",
+    "dept":"Director, Teacher",
     "description": null,
     "email":"mailto:fady.usf6@gmail.com",
     "image": "/img/team/fady.jpg"
+  },
+  {
+    "name":"Grace Youssef",
+    "dept":"Teacher, Tech School Instructor",
+    "description": null,
+    "email":"mailto:fady.usf6@gmail.com",
+    "image": "/img/team/apply.jpg"
   }
 ]
