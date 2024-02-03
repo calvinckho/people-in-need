@@ -32,7 +32,7 @@
 
 {% if 'products' in id %}
   {% if not meta_image %}
-    {% set meta_image = 'https://people-need.org/img/logo.png' %}
+    {% set meta_image = 'https://people-need.org/img/logo-avatars.png' %}
   {% endif %}
   {% if not meta_description %}
     {% set meta_description = "People in Need provides practica assistance to Christians in the Middle East." %}
@@ -66,7 +66,7 @@
   <meta name="twitter:title" content="People in Need">
 {% endif %}
 <meta name="twitter:description" content="{% if meta_description %}{{ meta_description }}{% else %}People in Need provides assistance to Christians in the Middle East.{% endif %}">
-<meta name="twitter:image" content="{% if meta_image %}{{meta_image}}{% else %}https://people-need.org/img/logo.png{% endif %}">
+<meta name="twitter:image" content="{% if meta_image %}{{meta_image}}{% else %}https://people-need.org/img/logo-avatars.png{% endif %}">
 
 <!-- Social: Facebook / Open Graph -->
 <meta property="fb:page_id" content="1321836767955949">

@@ -37,6 +37,15 @@ const resources = {
         "action": "Read",
         "bgImage": "/img/resource-center/roi-hybrid-native-card.png",
         "bgColor": "#4F82FF"
+      },
+      {
+        "type": "Article",
+        "title": "Vision for 2024",
+        "url": "/resources/articles/vision-for-2024",
+        "target": "_self",
+        "action": "Read",
+        "bgImage": "/img/resource-center/article-why-developers-love-ionic.png",
+        "bgColor": "#4F82FF"
       }/*,
       {
         "type": "Report",
@@ -67,6 +76,24 @@ const resources = {
         "type": "Report",
         "title": "Report (April - May 2021)",
         "url": "/resources/report/report-april-may-2021",
+        "target": "_self",
+        "action": "Read",
+        "bgImage": "/img/resource-center/state-of-app-card.png",
+        "bgColor": "#7D5FB0"
+      },
+      {
+        "type": "Report",
+        "title": "2022 Year-end Report",
+        "url": "/resources/report/2022-year-end-report1",
+        "target": "_self",
+        "action": "Read",
+        "bgImage": "/img/resource-center/state-of-app-card.png",
+        "bgColor": "#2C4186"
+      },
+      {
+        "type": "Report",
+        "title": "2023 Year-end Report",
+        "url": "/resources/report/2023-year-end-report",
         "target": "_self",
         "action": "Read",
         "bgImage": "/img/resource-center/state-of-app-card.png",
