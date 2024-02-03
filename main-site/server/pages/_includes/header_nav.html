@@ -2,8 +2,39 @@
 <!--<li class="{% if id.indexOf('what-is-ionic') == 0%} active{% endif %}">
   <a href="/how-it-works" id="btn-header-ionic">How It Works</a>
 </li>-->
-<li class="{% if id.indexOf('about') == 0%} active{% endif %}">
-  <a href="/about" id="btn-header-about">Our Story</a>
+<li class="{% if id.indexOf('institute') == 0%} active{% endif %}">
+  <a href="/institute" id="btn-header-about">Institute</a>
+</li>
+<li class="dropdown dropdown--has-container">
+  <a href="#"
+     class="dropdown-toggle"
+     role="button"
+     aria-haspopup="true"
+     aria-expanded="false">
+    Projects {% include '_includes/svg/chevron-down.svg' %}
+  </a>
+  <ul class="dropdown-menu dropdown-menu--container" id="dropdown-support">
+    <li class=" dropdown-menu__row">
+      <ul class="dropdown-menu__column">
+        <li><span class="dropdown-menu__text--l2">Types</span></li>
+        <li>
+          <a href="https://opencollective.com/people-in-need/projects/food-for-christians" class="dropdown-menu__text--l3"><!--add icon--docs to the class if wanted to enable icon-->
+            Food Bank
+          </a>
+        </li>
+        <li>
+          <a href="https://opencollective.com/people-in-need/projects/christmas-gifts-for-children" class="dropdown-menu__text--l3"><!--add icon--help-center to the class if wanted to enable icon-->
+            Christmas Toy Drive
+          </a>
+        </li>
+        <li>
+          <a href="https://opencollective.com/people-in-need/projects/earthquake-syria" class="dropdown-menu__text--l3"><!--add icon--help-center to the class if wanted to enable icon-->
+            Syria Earthquake
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>{# end .dropdown-menu__container #}
 </li>
 <!--<li class="dropdown dropdown&#45;&#45;has-container">
   <a href="#"
@@ -92,7 +123,13 @@
     </ul>{# end .dropdown-menu__container #}
   </div>
 </li>-->
-<li class="dropdown dropdown--has-container">
+<li class="{% if id.indexOf('about') == 0%} active{% endif %}">
+  <a href="/about" id="btn-header-about">Our Story</a>
+</li>
+<li class="{% if id.indexOf('resources') == 0%} active{% endif %}">
+  <a href="/resources" id="btn-header-about">Resources</a>
+</li>
+<!--<li class="dropdown dropdown&#45;&#45;has-container">
   <a href="#"
      class="dropdown-toggle"
      role="button"
@@ -100,24 +137,24 @@
      aria-expanded="false">
     Learning {% include '_includes/svg/chevron-down.svg' %}
   </a>
-  <ul class="dropdown-menu dropdown-menu--container" id="dropdown-support">
+  <ul class="dropdown-menu dropdown-menu&#45;&#45;container" id="dropdown-support">
     <li class=" dropdown-menu__row">
       <ul class="dropdown-menu__column">
-        <li><span class="dropdown-menu__text--l2">Topics</span></li>
+        <li><span class="dropdown-menu__text&#45;&#45;l2">Topics</span></li>
         <li>
-          <a href="/resources" class="dropdown-menu__text--l3"><!--add icon--docs to the class if wanted to enable icon-->
+          <a href="/resources" class="dropdown-menu__text&#45;&#45;l3">&lt;!&ndash;add icon&#45;&#45;docs to the class if wanted to enable icon&ndash;&gt;
             Resources
           </a>
         </li>
-        <!--<li>
+        &lt;!&ndash;<li>
           <a href="/support" class="dropdown-menu__text&#45;&#45;l3">&lt;!&ndash;add icon&#45;&#45;help-center to the class if wanted to enable icon&ndash;&gt;
             Help Center
           </a>
-        </li>-->
+        </li>&ndash;&gt;
       </ul>
     </li>
   </ul>{# end .dropdown-menu__container #}
-</li>
+</li>-->
 <!--<li class="dropdown dropdown&#45;&#45;has-container">
   <a href="#"
      class="dropdown-toggle"

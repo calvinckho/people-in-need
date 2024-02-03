@@ -525,15 +525,17 @@ section {
   position: relative; }
 
 #app-builder .graphics {
-  margin-left: -86px;
+  margin-left: 86px;
   padding-left: 0;
-  margin-right: -120px;
-  width: 897px; }
+  margin-right: 120px;
+  width: 789px; }
   @media (max-width: 767px) {
     #app-builder .graphics {
       width: 100%;
       margin-top: 100px;
+      max-width: 400px;
       margin-bottom: -60px; } }
+
 
 #oss .frameworks {
   margin-bottom: 33px;

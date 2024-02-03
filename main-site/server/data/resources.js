@@ -40,7 +40,7 @@ const resources = {
       },
       {
         "type": "Article",
-        "title": "Vision for 2024",
+        "title": "Announcing the new People in Need Institute",
         "url": "/resources/articles/vision-for-2024",
         "target": "_self",
         "action": "Read",
@@ -74,7 +74,7 @@ const resources = {
     items: [
       {
         "type": "Report",
-        "title": "Report (April - May 2021)",
+        "title": "2021 Mid-Year Report",
         "url": "/resources/report/report-april-may-2021",
         "target": "_self",
         "action": "Read",
@@ -83,7 +83,7 @@ const resources = {
       },
       {
         "type": "Report",
-        "title": "2022 Year-end Report",
+        "title": "2022 Year-End Report",
         "url": "/resources/report/2022-year-end-report1",
         "target": "_self",
         "action": "Read",
@@ -92,7 +92,7 @@ const resources = {
       },
       {
         "type": "Report",
-        "title": "2023 Year-end Report",
+        "title": "2023 Year-End Report",
         "url": "/resources/report/2023-year-end-report",
         "target": "_self",
         "action": "Read",
